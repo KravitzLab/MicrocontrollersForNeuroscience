@@ -1,5 +1,5 @@
 /*
-   Day 1 Project - build a simple function generator for controlling optogenetic stimulation!
+   Day 1 Project - build a simple pulse generator for controlling optogenetic stimulation!
    Blinks D13 at set frequency
    Lex Kravitz
    alexxai@wustl.edu
