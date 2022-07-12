@@ -1,6 +1,8 @@
 /*
    Day 1 Project - build a simple pulse generator for controlling optogenetic stimulation!
    Blinks D13 at set frequency
+   The goal here is to change the value assigned to "freq" with the buttons or joystick
+
    Lex Kravitz
    alexxai@wustl.edu
    June 2022
@@ -21,12 +23,13 @@ void loop() {
   digitalWrite (13, LOW);                                       // Turn off LED on D13
   delay(1000 / freq / 2);                                       // Delay for light OFF period
 
-  //Change frequency with the joystick
-  if (analogRead(A10) < 600) {                                  // If joystick is held up
-    freq++;                                                     // Increase pulsing frequency
-  }
+  ///////////////////////////////////////////////////////
+  //Write your code below here to update the value of "freq"
+  ///////////////////////////////////////////////////////
 
-  if (analogRead(A10) > 400) {                                  // If joystick is held down
-    freq--;                                                     // Decrease pulsing frequency
-  }
+
+
+
+
+
 }
