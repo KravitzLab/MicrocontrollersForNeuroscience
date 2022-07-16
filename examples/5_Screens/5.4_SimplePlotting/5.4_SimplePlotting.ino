@@ -4,33 +4,23 @@
   Lex Kravitz
  **************************************************************************/
 
-//We need libraries
-#include <Adafruit_GFX.h>    // Core graphics library
-#include <Adafruit_ST7735.h> // Hardware-specific library for ST7735
-#include <SPI.h>
+//We need these libraries to use the screen
+#include <Adafruit_GFX.h>                                      // Core graphics library
+#include <Adafruit_ST7735.h>                                   // Hardware-specific library for ST7735
+#include <SPI.h>                                               // SPI communication library
 
-//We need these pin definitions for SPI
-#define TFT_CS        44 // PyBadge/PyGamer display control pins: chip select
-#define TFT_RST       46 // Display reset
-#define TFT_DC        45 // Display data/command select
-#define TFT_BACKLIGHT 47 // Display backlight pin
+Adafruit_ST7735 tft = Adafruit_ST7735(&SPI1, 44, 45, 46);      // Start screen - the numbers in the function are pin numbers for the screen
 
-//Start screen object
-Adafruit_ST7735 tft = Adafruit_ST7735(&SPI1, TFT_CS, TFT_DC, TFT_RST);
-
-void setup() {
-  tft.initR(INITR_BLACKTAB);                                  //initialize ST7735R
-  tft.fillScreen(ST77XX_BLACK);                               //clear screen
-
-  //turn on backlight
-  pinMode (TFT_BACKLIGHT, OUTPUT);                            //set backlight pin as an output
-  pinMode (A7, INPUT);                                        //set light sensor pin as an input 
-  analogWrite(TFT_BACKLIGHT, 50);                             //turn on backlight ~20% brightness
-  tft.setRotation(1);                                         //set screen rotation
+void setup(void) {
+  tft.initR(INITR_BLACKTAB);                                   // Initialize ST7735R screen
+  tft.setRotation(1);                                          // Rotate screen 90 degrees
+  tft.fillScreen(ST77XX_BLACK);                                // Fill screen in black (ie: clear screen)
+  digitalWrite(47, HIGH);                                      // turn on backlight (this is like our red LED, but on pin 47)
+  pinMode (A7, INPUT);                                         // We'll read the light sensor on pin A7       
 }
 
 void loop() {
-  //simple plotting code!
+  //This is some very simple plotting code!
   for (int i = 0; i < 160; i++) {                              //this is a for loop that runs from 0 to 160 (the width of the screen), so we're running the code in this for loop for every pixel in the X direction
     int light = analogRead(A7);                                //read the light sensor
     tft.setCursor(0, 0);                                       //set cursor to the top left

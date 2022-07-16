@@ -16,5 +16,5 @@ void loop() {
   File dataFile = SD.open("testing.txt", FILE_WRITE);  //open file (if the filename doesn't exist this will create a new one)
   dataFile.println("testing");                         //write the word "testing" to the file and move to the next line
   dataFile.close();                                    //close file (data won't be written until it is closed)
-  delay(1000);                                         //delay 1s 
+  delay(1000);                                         //delay for 1s 
 }

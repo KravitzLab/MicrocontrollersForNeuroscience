@@ -15,6 +15,6 @@ void setup() {
 }
 
 void loop() {
-  pixels.setPixelColor(0, 20, 0, 0);                              // Turn left-most pixel on red (Experiment with changing this line!)
+  pixels.setPixelColor(0, 20, 0, 0);                              // Turn left-most pixel on red (Experiment with changing this line! Can you change the color? The pixel?)
   pixels.show();                                                  // Call pixels.show to light up the pixels
 }
