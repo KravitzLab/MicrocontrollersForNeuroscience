@@ -4,7 +4,6 @@
    
    created Jun 2022
    by Lex Kravitz and Kevin Chavez
-   alexxai@wustl.edu
 */
 
 int freq = 5;                                                   // This is our pulsing frequency, start at 5Hz
