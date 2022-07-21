@@ -1,8 +1,15 @@
-/**************************************************************************
-  Light Sensor Screen Plot on Adafruit PyGamer
-  June 2022
-  Lex Kravitz
- **************************************************************************/
+/*
+  Example 5.4: Light Sensor Screen Plot
+  
+  This example code plots data from the PyGamer's built-in light sensor
+  and creates a dynamic graph on the TFT screen.
+  
+  This example utilizes libraries and code from Adafruit. 
+  We encourage users to support open-source hardware and software!
+
+  created Jun 2022
+  by Lex Kravitz
+*/
 
 //We need these libraries to use the screen
 #include <Adafruit_GFX.h>                                      // Core graphics library
