@@ -1,8 +1,9 @@
 /*
   Example 2.5 Button Press
   
-  This example utilizes libraries and code from Adafruit. 
-  We encourage users to support open-source hardware and software!
+  This code uses externally wired buttons to demonstrate the use 
+  of buttons with microcontrollers. The serial monitor produces  
+  feedback via "if" statements.
   
   created Jun 2022
   by Cammi Rood
