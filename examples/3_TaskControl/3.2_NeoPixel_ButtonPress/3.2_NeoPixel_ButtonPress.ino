@@ -1,8 +1,12 @@
-/**************************************************************************
-  Example 3.2 - NeoPixel Button Press on Adafruit PyGamer
-  June 2022
-  Cammi Rood
- **************************************************************************/
+/*
+  Example 3.2 - NeoPixel Button Press
+  
+  This code uses an externally wired button to control the built-in
+  NeoPixel RGB LEDs using "if" statements.
+  
+  created Jun 2022
+  by Cammi Rood
+*/
 
 // Reference the NeoPixel Library
 #include <Adafruit_NeoPixel.h>
