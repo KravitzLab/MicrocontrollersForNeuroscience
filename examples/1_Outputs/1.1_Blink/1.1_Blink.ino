@@ -1,5 +1,5 @@
 /*
-  Re-mix of the famous Blink sketch
+  Example 1.1: Re-mix of the famous Blink sketch
   
   The PyGamer has an on-board LED you can control. This red LED is connected to pin 13, 
   but you may use LED_BUILTIN. LED_BUILTIN is set to the correct LED pin independent 
