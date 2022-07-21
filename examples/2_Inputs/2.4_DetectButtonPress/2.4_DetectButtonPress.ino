@@ -6,7 +6,7 @@
   feedback via "if" statements.
   
   created Jun 2022
-  by Cammi Rood
+  by Kevin Chávez López
 */
 
 int button1 = 2;                                      // button1 will be plugged into digital pin 2
