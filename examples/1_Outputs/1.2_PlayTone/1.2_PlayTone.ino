@@ -1,5 +1,5 @@
 /**************************************************************************
-  Playing a tone on Adafruit PyGamer
+  Example 1.2: Playing a tone
   
   This code demonstrates the use of the PyGamer's speaker. It turns on 
   and turns off the speaker quickly to create a 500Hz tone.
