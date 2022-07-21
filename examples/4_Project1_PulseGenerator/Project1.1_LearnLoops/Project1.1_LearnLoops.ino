@@ -1,8 +1,12 @@
-/**************************************************************************
-  Learn for and while loops with Adafruit PyGamer
-  June 2022
-  Cammi Rood and Lex Kravitz
- **************************************************************************/
+/*
+  Project 1.1: Learn for and while loops
+  
+  This code demonstrates the use of "for" loops and "while" loops
+  to control NeoPixels built-in to the PyGamer. 
+  
+  created Jun 2022
+  by Cammi Rood and Lex Kravitz
+*/
 
 #include <Adafruit_NeoPixel.h>                                    //Initialize libraries
 
