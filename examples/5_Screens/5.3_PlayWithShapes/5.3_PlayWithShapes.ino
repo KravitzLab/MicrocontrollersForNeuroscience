@@ -1,7 +1,5 @@
-/**************************************************************************
-  Play with shapes
-  Cammi Rood and Lex Kravitz
-  July 2022
+/*
+  Example 5.3: Play with shapes
 
   We're going to learn to draw shapes here - try copy/pasting these commands into the void loop()
   tft.drawPixel(50, 50, ST77XX_WHITE);                       // Pixel
@@ -12,7 +10,13 @@
   tft.fillCircle(80, 64, 39, ST77XX_WHITE);                  // Circle fill
   tft.drawRoundRect(40, 32, 80, 64, 10, ST77XX_ORANGE);      // Round rectangle outline
   tft.fillRoundRect(41, 33, 78, 62, 10, ST77XX_GREEN);       // Round rectangle fill
- **************************************************************************/
+  
+  This example utilizes libraries and code from Adafruit. 
+  We encourage users to support open-source hardware and software!
+  
+  created Jun 2022
+  by Cammi Rood and Lex Kravitz
+*/
 
 //We need these libraries to use the screen
 #include <Adafruit_GFX.h>                                    // Core graphics library
