@@ -1,7 +1,11 @@
 /*
-The simplest SD card example ever!
-Lex Kravitz
-June 2022
+Example 6.1: The simplest SD card example ever!
+
+This code demonstrates the use of SD cards with microcontrollers.
+A text file is written to the SD card. 
+
+created Jun 2022
+by Lex Kravitz
 */
 
 #include <SPI.h>                                       //Include SPI library
