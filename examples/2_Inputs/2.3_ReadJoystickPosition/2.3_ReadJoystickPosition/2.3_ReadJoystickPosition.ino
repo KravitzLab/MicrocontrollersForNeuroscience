@@ -1,8 +1,14 @@
-/**************************************************************************
-  Example 2.3 Read the Joystick position on Adafruit PyGamer
-  June 2022
-  Cammi Rood
- **************************************************************************/
+/*
+  Example 2.3 Read Joystick position
+  
+  This code demostrates reading values from the PyGamer's built-in 
+  joystick. The X and Y-values are read individually from two  
+  separate analog pins. The resulting values are displayed via the 
+  serial monitor.
+  
+  created Jun 2022
+  by Cammi Rood
+*/
 
 int JoyStickY = A10;                                  // Read the Y position is on Analog pin 10
 int JoyStickX = A11;                                  // Read the X position on Analog pin 11
