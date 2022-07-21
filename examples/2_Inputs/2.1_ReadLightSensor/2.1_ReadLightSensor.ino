@@ -1,5 +1,14 @@
 /*
   Example 2.1: Read from the light sensor
+  
+  This code demonstrates the use of the built-in light sensor on the PyGamer.
+  It reads from the analog sensor and displays the light value (0-1023) on the
+  serial monitor.
+  
+  created Jun 2022
+  by Cammi Rood
+
+  
 */
 
 int sensorPin = A7;                                   // The lightsensor is on pin A7
