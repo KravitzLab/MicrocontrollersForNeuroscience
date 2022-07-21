@@ -1,14 +1,18 @@
-/**************************************************************************
-  Screen test
-  Lex Kravitz (based heavily on Adafruit example code!)
-  July 2022
+/*
+  Example 5.2: Play with text
 
   We're going to learn a few more functions here:
   tft.setRotation(1) rotates the screen 90 degrees
   tft.setCursor(X, Y) moves the cursor location
   tft.setTextSize(N) changes the text size
   tft.setTextColor(COLOR) change the color - you can try ST77XX_RED, ST77XX_WHITE, ST77XX_BLUE, etc for colors
- **************************************************************************/
+  
+  This example utilizes libraries and code from Adafruit. 
+  We encourage users to support open-source hardware and software!
+  
+  created Jun 2022
+  by Lex Kravitz (based heavily on Adafruit example code!)
+*/
 
 //We need these libraries to use the screen
 #include <Adafruit_GFX.h>                                    // Core graphics library
