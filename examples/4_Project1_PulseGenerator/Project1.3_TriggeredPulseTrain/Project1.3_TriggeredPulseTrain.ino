@@ -1,10 +1,9 @@
 /*
    Day 1 Project - build a simple pulse generator for controlling optogenetic stimulation!
    Blink a pin at a set frequency whenever button 2 is pressed
-
-   Lex Kravitz and Kevin Chavez
-   alexxai@wustl.edu
-   June 2022
+   
+   created Jun 2022
+   by Lex Kravitz and Kevin Chavez
 */
 
 int freq = 5;                                                   // This is our pulsing frequency, start at 5Hz
