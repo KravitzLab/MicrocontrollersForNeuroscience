@@ -1,7 +1,11 @@
 /*
-Log light levels with a timestamp!
-Lex Kravitz
-July 2022
+Example 6.3: Log light levels with a timestamp!
+
+This code writes values from the analog light sensor to a csv file 
+on an SD card with time stamps.
+
+created Jul 2022
+by Lex Kravitz
 */
 
 #include <SPI.h>                                         //Include SPI library
