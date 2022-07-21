@@ -1,5 +1,5 @@
 /*
-  Example 5.5: Loading images demo
+  Example 6.: Loading images demo
   
   Copy parrot.bmp and daffodil.bmp from the /extras directory to the SD card in PyGamer 
   
