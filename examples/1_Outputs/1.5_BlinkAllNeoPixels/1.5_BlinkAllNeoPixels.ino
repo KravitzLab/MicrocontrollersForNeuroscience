@@ -1,7 +1,14 @@
 /*
   Example 1.5: Blink the Neopixels
+  
   We blinked the red LED, and "blinked" the speaker,
   now let's blink the Neopixels!
+  
+  This example utilizes libraries and code from Adafruit. 
+  We encourage users to support open-source hardware and software!
+  
+  created Jun 2022
+  by Lex Kravitz
 
 */
 
