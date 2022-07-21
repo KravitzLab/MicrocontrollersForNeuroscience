@@ -1,9 +1,13 @@
-/**************************************************************************
-   Loading images demo
+/*
+  Example 5.5: Loading images demo
+  
   Copy parrot.bmp and daffodil.bmp from the /extras directory to the SD card in PyGamer 
-  (This example will make use of the screen and SD card)
-  July 2022
-  Lex Kravitz
+  
+  This example utilizes libraries and code from Adafruit. 
+  We encourage users to support open-source hardware and software!
+  
+  adapted from an Arduino example Jul 2022
+  by Lex Kravitz
  **************************************************************************/
 
 //We need these libraries 
