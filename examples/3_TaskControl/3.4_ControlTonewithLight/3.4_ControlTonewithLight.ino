@@ -1,8 +1,12 @@
-/**************************************************************************
-  Light Sensor and Tone on Adafruit PyGamer
-  June 2022
-  Lex Kravitz & Cammi Rood
- **************************************************************************/
+/*
+  Example 3.4: Light Sensor and Tone
+  
+  This code demonstrates the control of a tone by the built-in light
+  sensor. The code reads the analog sensor data and plays a tone.
+  
+  created Jun 2022
+  by Lex Kravitz and Cammi Rood
+*/
  
 int sensorPin = A7;
 int speaker = A0;
