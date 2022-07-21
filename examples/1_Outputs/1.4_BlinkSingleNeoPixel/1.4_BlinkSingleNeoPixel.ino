@@ -4,10 +4,6 @@
   We blinked the red LED, and "blinked" the speaker,
   now let's blink the Neopixels!
   
-  This code uses built-in NeoPixels, a type of LED in which each LED 
-  has its own chip. This allows these LEDs to be controlled individually, 
-  despite only using one digital pin for multiple LEDs. 
-  
   This example utilizes libraries and code from Adafruit. 
   We encourage users to support open-source hardware and software!
   
