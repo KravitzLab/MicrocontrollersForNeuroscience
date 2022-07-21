@@ -1,7 +1,11 @@
 /*
-The 2nd simplest SD card example ever!
-Lex Kravitz
-June 2022
+Example 6.2: The 2nd simplest SD card example ever!
+
+This code uses the PyGamer's built-in light sensor to write a 
+csv file to the SD card.
+
+created Jun 2022
+by Lex Kravitz
 */
 
 #include <SPI.h>                                       //Include SPI library
