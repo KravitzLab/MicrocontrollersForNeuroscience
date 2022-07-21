@@ -1,8 +1,12 @@
-/**************************************************************************
-  Running wheel demo on Adafruit PyGamer
-  June 2022
-  Lex Kravitz
- **************************************************************************/
+/*
+  Project 2: Running wheel demo on Adafruit PyGamer
+  
+  This code uses a customized setup with the Adafruit PyGamer board to count
+  the number of revolutions made by a mouse wheel. 
+  
+  created Jun 2022
+  by Lex Kravitz
+*/
 
 //We need these libraries
 #include <Adafruit_GFX.h>                                    // Core graphics library
