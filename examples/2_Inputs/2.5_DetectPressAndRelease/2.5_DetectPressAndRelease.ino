@@ -1,8 +1,12 @@
-/**************************************************************************
-  Example 2.5 Button Press on Adafruit PyGamer
-  June 2022
-  Cammi Rood
- **************************************************************************/
+/*
+  Example 2.5 Button Press
+  
+  This example utilizes libraries and code from Adafruit. 
+  We encourage users to support open-source hardware and software!
+  
+  created Jun 2022
+  by Cammi Rood
+*/
 
 int button1 = 2;                                      // button1 will be plugged into digital pin 2
 int button2 = 3;                                      // button2 will be plugged into digital pin 3
