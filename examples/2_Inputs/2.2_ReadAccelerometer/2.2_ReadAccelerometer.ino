@@ -1,8 +1,16 @@
-/**************************************************************************
-  Example 2.2_ Read from the accelerometer on the Adafruit PyGamer
-  June 2022
-  Lex Kravitz & Cammi Rood
- **************************************************************************/
+/*
+  Example 2.2: Read from the accelerometer
+  
+  This code uses analog data from three axes on the PyGamer's built-in
+  accelerometer, the LIS3DH. The accelerometer values are displayed via 
+  the serial monitor and/or the serial plotter.
+  
+  This example utilizes libraries and code from Adafruit. 
+  We encourage users to support open-source hardware and software!
+  
+  created Jun 2022
+  by Lex Kravitz & Cammi Rood
+ */
 
 //Include libraries
 #include <Wire.h>
