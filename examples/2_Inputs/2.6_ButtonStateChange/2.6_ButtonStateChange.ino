@@ -1,8 +1,14 @@
-/**************************************************************************
-  Example 2.5 Button Press on Adafruit PyGamer
-  June 2022
-  Cammi Rood
- **************************************************************************/
+/*
+  Example 2.5 Button Press
+  
+  This code uses externally wired buttons to demonstrate the use 
+  of buttons with microcontrollers. The serial monitor produces  
+  feedback via "if" statements.
+  
+  created Jun 2022
+  by Cammi Rood and Kevin Chávez López
+*/
+
 int blueButton = 2;                                 // Blue button will be plugged into digital pin 2
 int redButton = 3;                                  // Red button will be plugged into digital pin 3
 
