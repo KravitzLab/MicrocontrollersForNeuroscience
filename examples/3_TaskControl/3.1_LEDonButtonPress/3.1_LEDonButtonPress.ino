@@ -1,8 +1,12 @@
-/**************************************************************************
-  Example 3.1 - Button Press turn on LED
-  June 2022
-  Lex Kravitz
- **************************************************************************/
+/*
+  Example 3.1 - Button Press LED
+  
+  This code introduces task control by using an externally wired button
+  to turn on the built-in LED.
+  
+  created Jun 2022
+  by Lex Kravitz
+*/
 
 int button = 2;                                                  // Choose a button to control the LED
 int LED = 13;                                                    // LED is on pin 13
