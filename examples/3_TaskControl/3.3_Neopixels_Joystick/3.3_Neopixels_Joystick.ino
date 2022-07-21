@@ -1,8 +1,13 @@
-/**************************************************************************
-  Joystick and NeoPixels on Adafruit PyGamer
-  June 2022
-  Cammi Rood & Kevin Chavez Lopez
- **************************************************************************/
+/*
+  Example 3.3: Joystick and NeoPixels
+  
+  This code uses the PyGamer's built-in joystick to read X and Y-values
+  to turn on specific NeoPixels. Based on the joystick's position, one
+  or two individual NeoPixels will turn on.
+  
+  created Jun 2022
+  by Cammi Rood & Kevin Chavez Lopez
+*/
 
 int JoystickY = A10;                                      
 int JoystickX = A11;
