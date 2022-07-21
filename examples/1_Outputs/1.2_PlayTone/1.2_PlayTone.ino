@@ -1,7 +1,11 @@
 /**************************************************************************
   Playing a tone on Adafruit PyGamer
-  June 2022
-  Lex Kravitz
+  
+  This code demonstrates the use of the PyGamer's speaker. It turns on 
+  and turns off the speaker quickly to create a 500Hz tone.
+  
+  created Jun 2022
+  by Lex Kravitz
  **************************************************************************/
 
 int jack = A0;                 //Let's give pin A0 a more useful name!
