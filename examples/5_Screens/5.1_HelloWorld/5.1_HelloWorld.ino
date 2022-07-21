@@ -1,8 +1,14 @@
-/**************************************************************************
-  Screen test
-  Lex Kravitz (based heavily on Adafruit example code!)
-  July 2022
- **************************************************************************/
+/*
+  Example 5.1: Screen test
+  
+  This code introduces users to the built-in TFT screen on the PyGamer.
+  
+  This example utilizes libraries and code from Adafruit. 
+  We encourage users to support open-source hardware and software!
+  
+  created Jun 2022
+  by Lex Kravitz (based heavily on Adafruit example code!)
+*/
 
 //We need these libraries to use the screen
 #include <Adafruit_GFX.h>                                    // Core graphics library
