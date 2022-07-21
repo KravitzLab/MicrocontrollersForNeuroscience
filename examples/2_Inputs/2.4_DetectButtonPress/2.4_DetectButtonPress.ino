@@ -3,7 +3,7 @@
   
   This code uses externally wired buttons to demonstrate the use 
   of buttons with microcontrollers. The serial monitor produces  
-  feedback that determines if the code is working as intended.
+  feedback via "if" statements.
   
   created Jun 2022
   by Cammi Rood
