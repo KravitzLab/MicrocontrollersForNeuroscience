@@ -39,3 +39,10 @@ void loop() {
   Serial.println(z);
   delay(50);
 }
+
+/*
+
+Activities:
+1. What is a potential use for an accelerometer?
+
+*/
