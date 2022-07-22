@@ -29,3 +29,11 @@ void loop() {
   pixels.show();                                                  // Call pixels.show to light up the pixels (this will "light" them up with (0,0,0) or turn them off
   delay(1000);                                                    // wait for a second
 }
+
+/*
+
+Activities:
+1. Can you blink the third pixel blue at 5Hz?
+2. Can you alternate between blinking the first and fifth pixels red at 1Hz?
+
+*/
