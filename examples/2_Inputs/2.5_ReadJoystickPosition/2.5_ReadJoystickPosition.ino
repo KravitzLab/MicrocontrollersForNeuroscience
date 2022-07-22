@@ -30,3 +30,12 @@ void loop() {
   Serial.println();                                   //Puts a line between each reading
   delay(delayVal);                                    //Wait for next sample
 }
+
+/*
+
+Activities:
+1. Without touching the joystick, what are the X and Y-values?
+2. Do the values go the full range from 0 to 1023?
+3. Think about what you may be able to do with these values.
+
+*/
