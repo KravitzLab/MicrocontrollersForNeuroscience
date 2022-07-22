@@ -30,3 +30,9 @@ void loop() {
   digitalWrite(13, LOW);             // turn the LED off by making the voltage LOW
   delay(1000);                       // You can change how many ms the LED is off
 }
+
+/*
+Activities:
+1. Change the number in the delay() function to blink at 5Hz, or 5 times per second.
+2. Change the number in the delay() function to blink at 10Hz, or 10 times per second.
+3. Change the number in the delay() function to blink at 50Hz, or 50 times per second.
