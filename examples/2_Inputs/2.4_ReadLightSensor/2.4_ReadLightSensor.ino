@@ -24,3 +24,11 @@ void loop() {
   Serial.println (sensorVal);                         // Print to the serial port
   delay (delayVal);                                   // Delay until next sample
 }
+
+/*
+
+Activities:
+1. What is the brightest/highest light value?
+2. What is the dimmest/lowest light value?
+
+*/
