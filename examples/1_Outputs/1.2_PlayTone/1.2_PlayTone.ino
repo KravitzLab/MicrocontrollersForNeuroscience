@@ -24,3 +24,10 @@ void loop() {
   digitalWrite(jack, LOW);     //Pull speaker pin low
   delay (1);                   //Delay 1ms
 }
+
+/*
+Activities:
+1. Change the volume
+2. Change the frequency
+3. Can you make it alternate between two frequencies?
+*/
