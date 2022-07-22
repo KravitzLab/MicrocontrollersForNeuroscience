@@ -29,3 +29,12 @@ void loop() {
   pixels.show();                                                  // Call pixels.show to light up the pixels (this will "light" them up with (0,0,0) or turn them off
   delay(1000);                                                    // wait for a second
 }
+
+
+/*
+
+Activities:
+1. Can you make the pixels light up red in sequence from left to right?
+2. Can you play a short tone while all five LEDs are lit?
+
+*/
