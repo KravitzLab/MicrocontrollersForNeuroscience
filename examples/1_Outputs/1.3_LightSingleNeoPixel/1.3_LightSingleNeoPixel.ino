@@ -31,8 +31,10 @@ void loop() {
 }
 
 /* 
+
 Activities:
 1. Change which pixel is lighting up
 2. Change the color
 3. Can you light up pixels 1, 3, and 5 in red?
+
 */
