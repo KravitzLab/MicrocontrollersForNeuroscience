@@ -1,5 +1,5 @@
 /*
-  Example 2.4: Read from the light sensor
+  Example 2.2: Read from the light sensor
   
   This code demonstrates the use of the built-in light sensor on the PyGamer.
   It reads from the analog sensor and displays the light value (0-1023) on the

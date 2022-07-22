@@ -1,5 +1,5 @@
 /*
-  Example 2.6: Read from the accelerometer
+  Example 2.4: Read from the accelerometer
   
   This code uses analog data from three axes on the PyGamer's built-in
   accelerometer, the LIS3DH. The accelerometer values are displayed via 

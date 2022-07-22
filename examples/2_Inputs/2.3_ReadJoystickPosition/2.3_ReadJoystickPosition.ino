@@ -1,5 +1,5 @@
 /*
-  Example 2.5 Read Joystick position
+  Example 2.3 Read Joystick position
   
   This code demostrates reading values from the PyGamer's built-in 
   joystick. The X and Y-values are read individually from two  
