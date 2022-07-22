@@ -30,3 +30,7 @@ void loop() {
     Serial.println("Button2 Pressed");                // Print "Button2 Pressed"
     delay(delayVal);                                  // A short delay helps slow down multiple triggers
   }
+
+  /*
+   Exercise 2.1a - do soemthing
+  */
