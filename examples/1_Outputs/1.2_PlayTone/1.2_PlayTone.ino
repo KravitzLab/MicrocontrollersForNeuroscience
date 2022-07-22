@@ -1,4 +1,4 @@
-/**************************************************************************
+/*
   Example 1.2: Playing a tone
   
   This code demonstrates the use of the PyGamer's speaker. It turns on 
@@ -6,7 +6,7 @@
   
   created Jun 2022
   by Lex Kravitz
- **************************************************************************/
+*/
 
 int jack = A0;                 //Let's give pin A0 a more useful name!
 
@@ -26,8 +26,10 @@ void loop() {
 }
 
 /*
+
 Activities:
 1. Change the volume
 2. Change the frequency
 3. Can you make it alternate between two frequencies?
+
 */
