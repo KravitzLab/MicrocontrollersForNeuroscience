@@ -31,6 +31,10 @@ void loop() {
     delay(delayVal);                                  // A short delay helps slow down multiple triggers
   }
 
-  /*
-   Exercise 2.1a - do soemthing
-  */
+/*
+
+Activities:
+1. Change the code to detect button release as well as button press
+2. Change the code to detect button state changes.
+
+*/
