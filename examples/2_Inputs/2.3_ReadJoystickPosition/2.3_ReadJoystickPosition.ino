@@ -36,6 +36,6 @@ Activities:
 1. Open the Serial Monitor. When you are not touching the joystick, what are the X and Y-values?
 2. What are the min and maximum range of the X and Y position?
 3. Open the Serial Plotter to see plots of the X and Y positions. Cool, huh?  Could you use this type of sensor for an experiment?
-5. (Advanced) Can you visualize the sampling period by blinking the red LED at the same rate?  Now change the sampling period to 1s.
+4. (Advanced) Can you visualize the sampling period by blinking the red LED at the same rate?  Now change the sampling period to 1s.
 
 */
