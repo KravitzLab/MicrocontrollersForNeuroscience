@@ -43,8 +43,9 @@ void loop() {
 /*
 
 Activities:
-1) Change the color of the plot line to yellow
-2) Plot the Joystick X position instead of the light sensor in yellow
-3) (Advanced) Now plot the Joystick Y position on the same plot in white
+1) If your range does not look ideal (plot is too low or too high), change the map() function (line 36) to fix this
+2) Change the color of the plot to yellow
+3) Plot the Joystick X position instead of the light sensor 
+4) (Advanced) Now plot the Joystick X and Y positions on the same plot in white and yellow
 
 */
