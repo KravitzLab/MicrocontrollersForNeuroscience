@@ -17,6 +17,7 @@
 #include <Adafruit_LIS3DH.h>
 
 Adafruit_LIS3DH lis = Adafruit_LIS3DH();                //Start accelerometer object
+int samplingPeriod = 100;                               //Set the sampling period
 
 void setup(void) {
   Serial.begin(9600);                                   //Start Serial connection to computer
@@ -37,12 +38,14 @@ void loop() {
   Serial.print(",");
   Serial.print("Z-value:");                             //Print z value to the serial monitor/plotter
   Serial.println(z);
-  delay(50);
+  delay(samplingPeriod);
 }
 
 /*
 
 Activities:
-1. What is a potential use for an accelerometer?
+1. Open the Serial Plotter to visualize the accelerometer values.  Can you independently change the X, Y, and Z values?
+2. Turn the sampling period down to 10ms
+3. What are some potential uses for an accelerometer?
 
 */
