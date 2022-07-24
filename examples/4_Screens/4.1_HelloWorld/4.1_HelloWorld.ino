@@ -25,5 +25,14 @@ void setup(void) {
 }
 
 void loop() {
-                                                             // Why don't we have anything in the void loop here??
-}
+}                                                             // Why don't we have anything in the void loop here??
+
+/*
+
+Activities:
+1) Why didn't we put anything in the void loop() in this script?
+2) Change the text to say hi to your neighbor
+3) Change the color of the text to Red
+4) Change the position of the text to the center of the screen.  (Hint: Google the Adafruit GFX library!)
+
+*/
