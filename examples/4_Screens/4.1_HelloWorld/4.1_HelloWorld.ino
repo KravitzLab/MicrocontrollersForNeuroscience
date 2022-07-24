@@ -33,6 +33,6 @@ Activities:
 1) Why didn't we put anything in the void loop() in this script?
 2) Change the text to say hi to your neighbor
 3) Change the color of the text to Red
-4) Change the position of the text to the center of the screen.  (Hint: Google the Adafruit GFX library!)
+4) Can you rotate the screen 90 degrees to the text isn't sideways? (Hint: Google the Adafruit GFX library!)
 
 */
