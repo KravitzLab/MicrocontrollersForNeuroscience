@@ -7,7 +7,6 @@
   
   created Jun 2022
   by Cammi Rood
-
   
 */
 
@@ -26,13 +25,10 @@ void loop() {
 }
 
 /*
-
 Activities:
 1. (More practice with variables) Change the variable name of lightSensor to lightLevel
 2. Open the Serial Monitor and watch the data.  Now close this and open the Serial Plotter.  Cool, huh?
-2. Change the sampling period to 1s, note the difference in sampling rate on the Serial Plotter
-3. What is the highest light value the sensor can detect? (try using your cell phone flashlight)
-4. What is the lowest light value the sensor can detect? (cover it with your finger)
-
-
+3. Change the sampling period to 1s, note the difference in sampling rate on the Serial Plotter
+4. What is the highest light value the sensor can detect? (try using your cell phone flashlight)
+5. What is the lowest light value the sensor can detect? (cover it with your finger)
 */
