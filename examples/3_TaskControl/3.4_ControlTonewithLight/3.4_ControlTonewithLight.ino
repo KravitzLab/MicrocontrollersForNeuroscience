@@ -1,31 +1,35 @@
 /*
   Example 3.4: Light Sensor and Tone
-  
-  This code demonstrates the control of a tone by the built-in light
-  sensor. The code reads the analog sensor data and plays a tone.
-  
+
+  This code reads the analog sensor data and plays a 500Hz tone,
+  varying the volume based on light level.
+
   created Jun 2022
   by Lex Kravitz and Cammi Rood
 */
- 
-int sensorPin = A7;
-int speaker = A0;
-int amp = 51;
-int delayVal = 100;
-int sensorVal = 0;
-int volume = 1000;
+
+#define speaker A0                         //Let's give pin A0 a more useful name!  
+#define lightSensor A7                     // The lightsensor is on pin A7
 
 void setup() {
-  pinMode(sensorPin, INPUT);
-  pinMode(speaker, OUTPUT);
-  pinMode(amp, OUTPUT);
-  digitalWrite(amp, HIGH);
+  pinMode(lightSensor, INPUT);             //Set "lightSensor" to be an output
+  pinMode(speaker, OUTPUT);                //Set "speaker" to be an output
+  pinMode (51, OUTPUT);                    //The PyGamer also has an audio amplifier on pin 51 that we need to activate to use the speaker
+  digitalWrite (51, HIGH);                 //Turn on the audio amplifier
 }
 
 void loop() {
-  int sensorVal = analogRead(sensorPin);
-  analogWrite(speaker, volume);
-  delay(sensorVal/100);
-  analogWrite(speaker, 0);
-  delay(sensorVal/100);
+  int light = analogRead(lightSensor);     // analogRead from the light sensor, and save the value as "light"
+  analogWrite(speaker, light*2);           // control the voltage to the speaker based on the light level
+  delay(1);                                // delay for 1ms 
+  analogWrite(speaker, 0);                 // set the voltage on the speaker pin to 0V
+  delay(1);                                // delay for 1ms
 }
+
+/*
+ 
+Activities:
+1) Modify the code to use the joystick instead of the light sensor to change the volume of the tone
+2) Modify the code to change the *frequency* and not the volume of the tone based on the joystick position.  You've made a cool instrument!
+ 
+ */
