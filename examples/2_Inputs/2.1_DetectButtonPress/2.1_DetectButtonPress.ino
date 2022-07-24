@@ -12,8 +12,8 @@
   by Kevin Chávez López
 */
 
-#define button1 2                                     // lets call digital pin 2 "button1"
-#define button2 3                                     // lets call digital pin 3 "button2"
+#define button1 2                                     // let's call digital pin 2 "button1"
+#define button2 3                                     // let's call digital pin 3 "button2"
 int delayVal = 200;                                   // Set the delay between button sampling
 
 void setup() {
@@ -33,11 +33,13 @@ void loop() {
     Serial.println("Button2 Pressed");                // Print "Button2 Pressed"
     delay(delayVal);                                  // A short delay helps prevent multiple triggers
   }
+}
 
 /*
 
 Activities:
-1. Change the code to detect button release as well as button press
-2. Change the code to detect button state changes.
+1. Change the code to report when the buttons are released (and not pressed) to the Serial monitor
+2. Now report both press and release to the Serial monitor
+3. Instead of writing to the Serial monitor, light up the red LED on pin 13 when button1 is pressed 
 
 */
