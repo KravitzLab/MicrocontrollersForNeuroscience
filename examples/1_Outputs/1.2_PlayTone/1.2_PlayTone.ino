@@ -9,9 +9,9 @@
   on pin A0 to create a 500Hz tone.
   
   We will also introduce the concept of naming variables in this example. "A0" is the pin name, but 
-  things might get confusing if we're also using A1, A2, and A3 for other things. You can type #define 
-  to assign a more useful name to A0 (see line 20 below).  #define is a compiler directive that 
-  substitutes a name (in this case "speaker") for a value (in this case "A0") 
+  calling it A0 in the code might get confusing if we were also using A1, A2, and A3 for other hardware. 
+  You can use "#define" to give pins more useful names (see line 20 below).  
+  #define is a compiler directive that substitutes a name (in this case "speaker") for a value (in this case "A0") 
   
   created Jun 2022
   by Lex Kravitz
