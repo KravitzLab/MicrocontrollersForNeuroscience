@@ -11,7 +11,7 @@
   
 */
 
-#define lightSensor = A7                          // The lightsensor is on pin A7
+#define lightSensor A7                            // The lightsensor is on pin A7
 int delayVal = 200;                               // Set our sampling period to 200ms
 
 void setup() {
