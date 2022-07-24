@@ -1,12 +1,10 @@
 /*
   Example 1.3: Light a single Neopixel
   
-  We blinked the red LED, and "blinked" the speaker,
-  now let's blink the Neopixels! 
+  We blinked the red LED, and "blinked" the speaker, now let's blink the Neopixels! 
   
-  This code uses built-in NeoPixels, a type of LED where each LED 
-  has its own chip. This allows these LEDs to be controlled individually, 
-  despite only using one digital pin for multiple LEDs. 
+  This code uses the built-in NeoPixels, a multi-color LED that has its own controller chip. 
+  This allows you to select individual LEDs and change their colors using only one digital pin.  
   
   This example utilizes libraries and code from Adafruit. 
   We encourage users to support open-source hardware and software!
@@ -33,8 +31,8 @@ void loop() {
 /* 
 
 Activities:
-1. Change which pixel is lighting up
-2. Change the color
+1. Can you change the above example to light up the 2nd pixel?
+2. Can you change the color of the pixel to blue? green? white? 
 3. Can you light up pixels 1, 3, and 5 in red?
 
 */
