@@ -42,3 +42,12 @@ void loop() {
   tft.print("Now I'm over here!");                           // print message - you can change this to print comical expressions!
   delay (1000);                                              // wait a second
 }
+
+/*
+
+Activities:
+1) Change the number in the screen rotation function, what happens?
+2) Set the textsize to 2, what happens?  What about 3?
+3) Can you control the backlight brightness with an analogWrite() call?
+
+*/
