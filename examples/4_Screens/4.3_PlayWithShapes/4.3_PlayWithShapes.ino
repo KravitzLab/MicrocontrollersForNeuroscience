@@ -45,3 +45,12 @@ void loop() {
   tft.drawLine(41, 50, 50, 45, ST77XX_WHITE);                // Line
   delay (1000);
 }
+
+/*
+
+Activities:
+1) Try setting tft.setRotation to 2, what happens?
+2) Change the color of the person to pink
+3) Draw on your own! (see available shape function at top of this script)
+
+*/
