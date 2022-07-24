@@ -24,3 +24,11 @@ void loop() {
   dataFile.close();                                    //close file (data won't be written on card until file is closed)
   delay(100);                                          //delay 100ms (this results in a 10Hz sampling rate of the light level)
 }
+
+/*
+
+Activities:
+1) If the light-level > 600, print "Maximum light" instead of printing the number in the log file
+2) 
+
+*/
