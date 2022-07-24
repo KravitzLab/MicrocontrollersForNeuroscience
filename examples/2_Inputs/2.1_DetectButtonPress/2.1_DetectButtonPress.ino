@@ -14,7 +14,7 @@
 
 #define button1 2                                     // let's call digital pin 2 "button1"
 #define button2 3                                     // let's call digital pin 3 "button2"
-int delayVal = 200;                                   // Set the delay between button sampling
+int samplingPeriod = 200;                             // Set the sampling period for buttong presses (in ms)
 
 void setup() {
   Serial.begin(9600);                                 // Start the serial connection to allow communication with the computer using the Serial port
@@ -23,15 +23,13 @@ void setup() {
 }
 
 void loop() {
-  int button1State = digitalRead(button1);            // Read the state of button1 and store it as "button1State"
-  int button2State = digitalRead(button2);            // Read the state of button2 and store it as "button2State"
-  if (button1State == LOW) {                          // If button1 has been pressed...
+  if (digitalRead(button1) == LOW) {                  // If button1 has been pressed...
     Serial.println("Button1 Pressed");                // Print "Button1 Pressed"
-    delay(delayVal);                                  // A short delay helps prevent multiple triggers
+    delay(samplingPeriod);                            // A short delay helps prevent multiple triggers
   }
-  if (button2State == LOW) {                          // If button2 has been pressed...
+  if (digitalRead(button2) == LOW) {                  // If button2 has been pressed...
     Serial.println("Button2 Pressed");                // Print "Button2 Pressed"
-    delay(delayVal);                                  // A short delay helps prevent multiple triggers
+    delay(samplingPeriod);                            // A short delay helps prevent multiple triggers
   }
 }
 
