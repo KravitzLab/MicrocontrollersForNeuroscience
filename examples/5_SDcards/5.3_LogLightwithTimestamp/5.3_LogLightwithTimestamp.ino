@@ -4,6 +4,8 @@ Example 5.3: Log light levels with a timestamp!
 This code writes values from the analog light sensor to a csv file 
 on an SD card with time stamps.
 
+It also uses the Arduino millis() function (Google it!) to record a timestamp.
+
 created Jul 2022
 by Lex Kravitz
 */
@@ -30,7 +32,9 @@ void loop() {
 /*
 
 Activities:
-1) Change the time-stamp log from ms to seconds
-2) Also print the time-stamp and light-level on the screen as you log
+1) Open LightT.csv in Excel and look at the time-stamps. What is the time between samples? What is the sampling rate in Hz?
+2) Why is the time between samples not constant?
+3) Modify the code to log timestamps in seconds instead of ms
+4) (Advanced) Also print the time-stamp and light-level on the screen as you log
 
 */
