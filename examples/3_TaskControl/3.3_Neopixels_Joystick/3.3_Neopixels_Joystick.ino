@@ -44,7 +44,7 @@ void loop() {
   Activities:
   1) Make the left two Neopixels light up in red, and the right two light up in blue when activated
   2) Change *one character* in the above code to change the Neopixels with the Y instead of X position
-  3) Change a different *single character* in the above code to light the Neopixels with the light sensor 
+  3) Modify the code to light the Neopixels based on how much light is detected by the light sensor (Hint: Do you recall what the range of the light sensor was?)
   3) (Advanced) Modify this code to control the NeoPixels with the accelerometer instead of the joystick
 
 */
