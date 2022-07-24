@@ -17,10 +17,18 @@ void setup() {
 }
 
 void loop() {
-  int buttonState = digitalRead(button);                         // Read the button state and store as "buttonState"
-  if (buttonState == LOW) {                                      // If button is pressed...
+  if (digitalRead(button) == LOW) {                              // If button is pressed...
     digitalWrite (13, HIGH);                                     // Turn on LED
   } else {                                                       // Otherwise...
-    digitalWrite (13, LOW);                                     // Turn off LED
+    digitalWrite (13, LOW);                                      // Turn off LED
   }
 }
+
+/*
+
+Activities:
+1) Make the other button turn on the LED
+2) When you push the button, leave the LED on for 1s before turning it off
+3) (Review from Module 2) When you push the button, also print "Button pushed" to the Serial monitor
+
+/*
