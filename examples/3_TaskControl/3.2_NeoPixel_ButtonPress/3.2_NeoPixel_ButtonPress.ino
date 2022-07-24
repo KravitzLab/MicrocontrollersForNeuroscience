@@ -23,8 +23,7 @@ void setup() {
 }
 
 void loop() {
-  int buttonState = digitalRead(button);                         // Read the button state and store as "buttonState"
-  if (buttonState == LOW) {                                      // If button is pressed...
+  if (digitalRead(button) == LOW) {                              // If button is pressed...
     pixels.fill(pixels.Color(0, 50, 50));                        // Light up all pixels
     pixels.show();                                               // pixels.show() sends the command to the Neopixels
   } else {                                                       // Otherwise...
@@ -32,3 +31,11 @@ void loop() {
     pixels.show();                                               // pixels.show() sends the command to the Neopixels
   }
 }
+
+/*
+
+Activities:
+1) Light up the pixels in Red
+2) Leave pixels lit up for 2 seconds after you let go of the button
+
+*/
