@@ -46,6 +46,7 @@ void loop() {
 Activities:
 1. Open the Serial Plotter to visualize the accelerometer values.  Can you move the PyGamer to independently alter the X, Y, and Z values?
 2. Turn the sampling period down to 10ms and look at the data on the Serial Plotter.  What do you notice?
-3. What are some potential uses for an accelerometer in neuroscience experiments?
+3. What units are the accelerometer values in? (Hint: Read from the link at the top)
+4. What are some potential uses for an accelerometer in neuroscience experiments?
 
 */
