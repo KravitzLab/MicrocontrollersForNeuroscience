@@ -19,7 +19,7 @@ void setup() {
 
 void loop() {
   int light = analogRead(lightSensor);            // analogRead from the light sensor, and save the value as "light"
-  Serial.print ("Light:");                // Print to the serial port (open the Serial Monitor in the Arduino IDE to view this readout)
+  Serial.print ("Light:");                        // Print to the serial port (open the Serial Monitor in the Arduino IDE to view this readout)
   Serial.println (light);                         // Print to the serial port
   delay (samplingPeriod);                         // Delay until next sample
 }
