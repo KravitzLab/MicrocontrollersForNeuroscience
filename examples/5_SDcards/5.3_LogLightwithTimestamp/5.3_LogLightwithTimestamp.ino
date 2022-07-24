@@ -11,20 +11,26 @@ by Lex Kravitz
 #include <SPI.h>                                         //Include SPI library
 #include <SD.h>                                          //Include SD library
 const int chipSelect = 4;                                //Set "Chip Select" pin for SD card on SPI bus
+#define lightSensor A7                                   //Assign the variable label lightSensor to pin A7
 
 void setup() {
   SD.begin(chipSelect);                                  //Initialize SD card
-  pinMode(A7, INPUT);
+  pinMode(lightSensor, INPUT);                           //Set lightSensor as an input
 }
 
 void loop() {
   File dataFile = SD.open("LightT.csv", FILE_WRITE);     //open file (if the filename doesn't exist this will create a new one)
-  int light = analogRead(A7);                            //read the light level from A7
-  dataFile.print(millis());                              //write the time (in milliseconds) since the device started up - can you change this to seconds?
+  int light = analogRead(lightSensor);                   //read the light level 
+  dataFile.print(millis());                              //write the time (in milliseconds) since the device started up. 
   dataFile.print(",");                                   //write a comma
   dataFile.println(light);                               //write the X position of the joystick to the file and move to the next line
   dataFile.close();                                      //close file (data won't be written on card until file is closed)
-  delay(100);                                            //delay 100ms (this results in a 10Hz sampling rate of the light level)
-
-  //Can you also display the light levels on the screen as you log them? 
 }
+
+/*
+
+Activities:
+1) Change the time-stamp log from ms to seconds
+2) Also print the time-stamp and light-level on the screen as you log
+
+*/
