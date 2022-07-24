@@ -1,9 +1,9 @@
 /*
   Example 2.4: Read from the accelerometer
   
-  This code uses analog data from three axes on the PyGamer's built-in
-  accelerometer, the LIS3DH. The accelerometer values are displayed via 
-  the serial monitor and/or the serial plotter.
+  This code reads  data from the LIS3DH 3-axis accelerometer on the PyGamer.
+  Read more about this chip and the Adafruit examples here:
+  https://learn.adafruit.com/adafruit-lis3dh-triple-axis-accelerometer-breakout/arduino
   
   This example utilizes libraries and code from Adafruit. 
   We encourage users to support open-source hardware and software!
@@ -44,8 +44,8 @@ void loop() {
 /*
 
 Activities:
-1. Open the Serial Plotter to visualize the accelerometer values.  Can you independently change the X, Y, and Z values?
-2. Turn the sampling period down to 10ms
-3. What are some potential uses for an accelerometer?
+1. Open the Serial Plotter to visualize the accelerometer values.  Can you move the PyGamer to independently alter the X, Y, and Z values?
+2. Turn the sampling period down to 10ms and look at the data on the Serial Plotter.  What do you notice?
+3. What are some potential uses for an accelerometer in neuroscience experiments?
 
 */
