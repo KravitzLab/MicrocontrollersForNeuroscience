@@ -1,8 +1,9 @@
 /*
-  Example 1.5: Blink the Neopixels
+  Example 1.5: Blink all of the Neopixels
   
-  We blinked the red LED, and "blinked" the speaker,
-  now let's blink the Neopixels!
+  The Neopixel library (https://github.com/adafruit/Adafruit_NeoPixel) 
+  has many methods to make our lives simpler. We will use the "fill" method
+  in this example to light up all of the pixels at the same time.  
   
   This example utilizes libraries and code from Adafruit. 
   We encourage users to support open-source hardware and software!
@@ -34,7 +35,7 @@ void loop() {
 /*
 
 Activities:
-1. Can you make the pixels light up red in sequence from left to right?
-2. Can you play a short tone while all five LEDs are lit?
+1. What happens if you remove the first call to pixels.show() in line 27?  Why?
+2. Can you play a short beep each time the five neopixels light up?
 
 */
