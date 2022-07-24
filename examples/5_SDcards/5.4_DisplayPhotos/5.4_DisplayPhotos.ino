@@ -48,3 +48,13 @@ void loop() {
   reader.drawBMP("/marbles.bmp", tft, 0, 0);              //draw daffodil
   delay (1000);                                              //wait a second
 }
+
+
+/*
+
+Activities:
+1) Plug a button into the pin 2 port. Modify the code to display "OB.bmp" when you push the button, otherwise clear the screen! 
+2) Download a photo of your own.  Resize to 160x128 pixels in MS Paint. 
+Save as a .bmp and transfer to the SD card in the PyGamer.  Display it on the screen!
+
+*/
