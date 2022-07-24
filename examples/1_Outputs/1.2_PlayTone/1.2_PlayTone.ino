@@ -37,9 +37,11 @@ void loop() {
 /*
 
 Activities:
-1. Can you make a 1000Hz tone?
-2. Does anything change if you pull the speaker LOW in line 26 and then HIGH in line 28?  Make your prediction before trying this.
-2. Changing the delay changes the tone frequency, how might you change the volume of the tone?  
+1. What happens if you #define speaker as A2 but make no other changes to the code?  Make your prediction before trying it?
+2. Can you change the name of "speaker" to "buzzer"? 
+3. Can you make a 1000Hz tone?
+4. Does anything change if you pull the speaker LOW in line 26 and then HIGH in line 28?  Make your prediction before trying this.
+5. (Advanced) Changing the delay changes the tone frequency, how might you change the volume of the tone?  
    (Hint: Arduino also has an analogWrite function - Google it!)
 
 */
