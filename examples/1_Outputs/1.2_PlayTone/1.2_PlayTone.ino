@@ -1,35 +1,40 @@
 /*
   Example 1.2: Playing a tone
   
-  This code demonstrates the use of the PyGamer's speaker. It turns on 
-  and turns off the speaker quickly to create a 500Hz tone.
+  In Example 1.1 we "blinked" the LED, meaning we pulled the voltage on the LED pin high 
+  and low in an alternating pattern. If we do this on a pin that is connected to a speaker
+  this will create a tone, although we'll need to "blink" the speaker much faster to hear the tone.
+
+  The PyGamer's speaker is attached to pin A0. In this example we will start by alternating the voltage
+  on pin A0 to create a 500Hz tone.
   
   created Jun 2022
   by Lex Kravitz
 */
 
-int jack = A0;                 //Let's give pin A0 a more useful name!
+#define speaker A0             //Let's give pin A0 a more useful name!
 
 // put your setup code here, to run once:
 void setup() {
-  pinMode(jack, OUTPUT);       //Set "jack" to be an output
+  pinMode(speaker, OUTPUT);    //Set "speaker" to be an output
   pinMode (51, OUTPUT)         //The PyGamer also has an audio amplifier on pin 51 that we need to activate to use the speaker
   digitalWrite (51, HIGH);     //Turn on the audio amplifier
 }
 
 // put your main code here, to run repeatedly:
 void loop() {
-  digitalWrite(jack, HIGH);    //Pull speaker pin high
+  digitalWrite(speaker, HIGH)  //Pull speaker pin high
   delay (1);                   //delay 1ms (1ms HIGH/LOW will createa  500Hz tone)
-  digitalWrite(jack, LOW);     //Pull speaker pin low
+  digitalWrite(speaker, LOW)   //Pull speaker pin low
   delay (1);                   //Delay 1ms
 }
 
 /*
 
 Activities:
-1. Change the volume
-2. Change the frequency
-3. Can you make it alternate between two frequencies?
+1. Can you make a 1000Hz tone?
+2. Does anything change if you pull the speaker LOW in line 26 and then HIGH in line 28?  Make your prediction before trying this.
+2. Changing the delay changes the tone frequency, how might you change the volume of the tone?  
+   (Hint: Arduino also has an analogWrite function - Google it!)
 
 */
