@@ -12,7 +12,7 @@
 */
 
 #define lightSensor A7                            // The lightsensor is on pin A7
-int samplingPeriod = 200;                         // Set our sampling period to 200ms
+int samplingPeriod = 100;                         // Set our sampling period to 100ms
 
 void setup() {
   Serial.begin(9600);                             // This will allow us to write data to the computer using the Serial port
@@ -20,7 +20,7 @@ void setup() {
 
 void loop() {
   int light = analogRead(lightSensor);            // analogRead from the light sensor, and save the value as "light"
-  Serial.print ("Light level = ");                // Print to the serial port (open the Serial Monitor in the Arduino IDE to view this readout)
+  Serial.print ("Light:");                // Print to the serial port (open the Serial Monitor in the Arduino IDE to view this readout)
   Serial.println (light);                         // Print to the serial port
   delay (samplingPeriod);                         // Delay until next sample
 }
@@ -29,8 +29,10 @@ void loop() {
 
 Activities:
 1. (More practice with variables) Change the variable name of lightSensor to lightLevel
-2. Change the sampling period to 2s, note the difference in sampling rate on the Serial Monitor
+2. Open the Serial Monitor and watch the data.  Now close this and open the Serial Plotter.  Cool, huh?
+2. Change the sampling period to 1s, note the difference in sampling rate on the Serial Plotter
 3. What is the highest light value the sensor can detect? (try using your cell phone flashlight)
 4. What is the lowest light value the sensor can detect? (cover it with your finger)
+
 
 */
