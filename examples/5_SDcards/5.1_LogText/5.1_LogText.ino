@@ -22,3 +22,11 @@ void loop() {
   dataFile.close();                                    //close file (data won't be written until it is closed)
   delay(1000);                                         //delay for 1s 
 }
+
+/*
+
+Activities:
+1) Change the file name to <your name>.txt
+2) Log some of your thoughts on the SD card (1000 words or less please!)
+
+*/
