@@ -36,7 +36,15 @@ void loop() {
     int light_mapped = map(light, 0, 500, 0, 128);             //remap the light sensor readings from 0-500 to 0-128 (the height of the screen)
     tft.fillRect(i, 0, 5, 160, ST77XX_BLACK);                  //clear a 5 pixel wide bar ahead of where we'll be plotting (instead of clearing the whole screen we can just swipe a black rectangle across the screen ahead of us)
     tft.drawLine (i, 128, i, 128-light_mapped, ST77XX_WHITE);  //draw white line showing light level
-    tft.drawPixel(i, 127-light_mapped, ST77XX_YELLOW);         //also draw a yellow pixel on top to highlight our plot
     delay(20);                                                 //this sets the screen scrolling speed (ie: 20ms between pixels, or 3.2s to cross the screen)
   }
 }
+
+/*
+
+Activities:
+1) Change the color of the plot line to yellow
+2) Plot the Joystick X position instead of the light sensor in yellow
+3) (Advanced) Now plot the Joystick Y position on the same plot in white
+
+*/
