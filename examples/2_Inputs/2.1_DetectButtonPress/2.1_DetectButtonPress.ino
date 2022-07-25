@@ -12,8 +12,8 @@
   by Kevin Chávez López
 */
 
-#define Button1 2                                     // let's call digital pin 2 "button1"
-#define Button2 3                                     // let's call digital pin 3 "button2"
+#define Button1 3                                     // let's call digital pin 2 "button1"
+#define Button2 2                                     // let's call digital pin 3 "button2"
 int samplingPeriod = 200;                             // Set the sampling period for buttong presses (in ms)
 
 void setup() {
