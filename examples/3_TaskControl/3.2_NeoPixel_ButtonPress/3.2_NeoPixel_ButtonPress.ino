@@ -1,9 +1,9 @@
 /*
   Example 3.2 - NeoPixel Button Press
-  
+
   This code uses an externally wired button to control the built-in
   NeoPixel RGB LEDs using "if" statements.
-  
+
   created Jun 2022
   by Cammi Rood
 */
@@ -11,11 +11,11 @@
 // Reference the NeoPixel Library
 #include <Adafruit_NeoPixel.h>
 
-int button = 2;                                                  // Choose a button to control the lights
+int button = 3;                                                  // Choose a button to control the lights
 int pix = 8;                                                     // The PyGamer pin connected to the NeoPixels = 8
 int numPix = 5;                                                  // Number of NeoPixels on the strip
 
-Adafruit_NeoPixel pixels(numPix, pix, NEO_GRB + NEO_KHZ800);     //Start the "pixels" object 
+Adafruit_NeoPixel pixels(numPix, pix, NEO_GRB + NEO_KHZ800);     //Start the "pixels" object
 
 void setup() {
   pixels.begin();                                                // Initiates the NeoPixel object
@@ -34,8 +34,8 @@ void loop() {
 
 /*
 
-Activities:
-1) Light up the pixels in Red
-2) Leave pixels lit up for 2 seconds after you let go of the button
+  Activities:
+  1) Light up the pixels in Red when you push the button
+  2) Leave pixels lit up for 2 seconds after you let go of the button
 
 */
