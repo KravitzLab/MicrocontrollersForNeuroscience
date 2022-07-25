@@ -30,13 +30,13 @@ void loop() {
   int y = lis.y;                                        //Store y acceleration in a variable called "y"
   int z = lis.z;                                        //Store z acceleration in a variable called "z"
 
-  Serial.print("X-value:");                             //Print x value to the serial monitor/plotter
+  Serial.print("X:");                             //Print x value to the serial monitor/plotter
   Serial.print(x);
   Serial.print(",");
-  Serial.print("Y-value:");                             //Print y value to the serial monitor/plotter
+  Serial.print("Y:");                             //Print y value to the serial monitor/plotter
   Serial.print(y);      
   Serial.print(",");
-  Serial.print("Z-value:");                             //Print z value to the serial monitor/plotter
+  Serial.print("Z:");                             //Print z value to the serial monitor/plotter
   Serial.println(z);
   delay(samplingPeriod);
 }
