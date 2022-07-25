@@ -20,7 +20,7 @@
 
 // put your setup code here, to run once:
 void setup() {
-  pinMode(13, OUTPUT);               //Set pin 13 as an output (this pin is connected to the red LED on the PyGamer
+  pinMode(13, OUTPUT);               //Set pin 13 as an output (this pin is connected to the red LED on the PyGamer)
 }
 
 // put your main code here, to run repeatedly:
