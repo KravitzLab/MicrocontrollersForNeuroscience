@@ -37,7 +37,7 @@ void loop() {
 /*
 
 Activities:
-1. What happens if you #define speaker as A2 but make no other changes to the code?  Make your prediction before trying it?
+1. What happens if you #define speaker as A2 but make no other changes to the code?  Make your prediction before trying it!
 2. Can you change the name of "speaker" to "buzzer"? 
 3. Can you make a 1000Hz tone?
 4. Does anything change if you pull the speaker LOW in line 26 and then HIGH in line 28?  Make your prediction before trying this.
