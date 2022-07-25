@@ -1,11 +1,11 @@
 /*
-Example 5.2: The 2nd simplest SD card example ever!
+  Example 5.2: The 2nd simplest SD card example ever!
 
-This code uses the PyGamer's built-in light sensor to write a 
-csv file to the SD card.
+  This code uses the PyGamer's built-in light sensor to write a
+  csv file to the SD card.
 
-created Jun 2022
-by Lex Kravitz
+  created Jun 2022
+  by Lex Kravitz
 */
 
 #include <SPI.h>                                       //Include SPI library
@@ -15,7 +15,6 @@ const int chipSelect = 4;                              //Set "Chip Select" pin f
 
 void setup() {
   SD.begin(chipSelect);                                //Initialize SD card
-  pinMode(lightSensor, INPUT);                                  //Set lightSensor as an input
 }
 
 void loop() {
@@ -28,9 +27,9 @@ void loop() {
 
 /*
 
-Activities:
-1) If the light-level is >600, print "Bright light" instead of printing the number in the log file
-2) If the light-level is <100, print "Low light" instead of printing the actual reading in the log file
-3) (Advanced) Have the program write just 10 light sensor samples and stop logging.
+  Activities:
+  1) If the light-level is >600, print "Bright light" instead of printing the number in the log file
+  2) If the light-level is <100, print "Low light" instead of printing the actual reading in the log file
+  3) (Advanced) Have the program write just 10 light sensor samples and stop logging.
 
 */

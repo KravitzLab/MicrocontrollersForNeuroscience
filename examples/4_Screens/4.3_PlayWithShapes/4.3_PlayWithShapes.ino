@@ -10,10 +10,10 @@
   tft.fillCircle(80, 64, 39, ST77XX_WHITE);                  // Circle fill
   tft.drawRoundRect(40, 32, 80, 64, 10, ST77XX_ORANGE);      // Round rectangle outline
   tft.fillRoundRect(41, 33, 78, 62, 10, ST77XX_GREEN);       // Round rectangle fill
-  
-  This example utilizes libraries and code from Adafruit. 
+
+  This example utilizes libraries and code from Adafruit.
   We encourage users to support open-source hardware and software!
-  
+
   created Jun 2022
   by Cammi Rood and Lex Kravitz
 */
@@ -40,7 +40,7 @@ void loop() {
   tft.drawLine(40, 65, 35, 80, ST77XX_WHITE);                // Line
   tft.drawLine(40, 65, 45, 80, ST77XX_WHITE);                // Line
   delay (1000);
-  
+
   tft.drawLine(41, 50, 50, 50, ST77XX_BLACK);                // Line - again, why are we doing this line in black??
   tft.drawLine(41, 50, 50, 45, ST77XX_WHITE);                // Line
   delay (1000);
@@ -48,9 +48,8 @@ void loop() {
 
 /*
 
-Activities:
-1) Try setting tft.setRotation to 2, what happens?
-2) Change the color of the person to pink
-3) Draw on your own! (see available shape function at top of this script)
+  Activities:
+  1) Make the character wave 5 times per second.
+  2) Practice drawing on your own! (see available shape function at top of this script)
 
 */

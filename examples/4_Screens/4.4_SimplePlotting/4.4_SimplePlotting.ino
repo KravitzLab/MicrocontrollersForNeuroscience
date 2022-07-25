@@ -1,10 +1,10 @@
 /*
   Example 4.4: Light Sensor Screen Plot
-  
+
   This example code plots data from the PyGamer's built-in light sensor
   and creates a dynamic graph on the TFT screen.
-  
-  This example utilizes libraries and code from Adafruit. 
+
+  This example utilizes libraries and code from Adafruit.
   We encourage users to support open-source hardware and software!
 
   created Jun 2022
@@ -23,7 +23,7 @@ void setup(void) {
   tft.setRotation(1);                                          // Rotate screen 90 degrees
   tft.fillScreen(ST77XX_BLACK);                                // Fill screen in black (ie: clear screen)
   digitalWrite(47, HIGH);                                      // turn on backlight (this is like our red LED, but on pin 47)
-  pinMode (A7, INPUT);                                         // We'll read the light sensor on pin A7       
+  pinMode (A7, INPUT);                                         // We'll read the light sensor on pin A7
 }
 
 void loop() {
@@ -35,17 +35,17 @@ void loop() {
     tft.print(light);                                          //write the light level in the top left
     int light_mapped = map(light, 0, 500, 0, 128);             //remap the light sensor readings from 0-500 to 0-128 (the height of the screen)
     tft.fillRect(i, 0, 5, 160, ST77XX_BLACK);                  //clear a 5 pixel wide bar ahead of where we'll be plotting (instead of clearing the whole screen we can just swipe a black rectangle across the screen ahead of us)
-    tft.drawLine (i, 128, i, 128-light_mapped, ST77XX_WHITE);  //draw white line showing light level
+    tft.drawLine (i, 128, i, 128 - light_mapped, ST77XX_WHITE); //draw white line showing light level
     delay(20);                                                 //this sets the screen scrolling speed (ie: 20ms between pixels, or 3.2s to cross the screen)
   }
 }
 
 /*
 
-Activities:
-1) If your range does not look ideal (plot is too low or too high), change the map() function (line 36) to fix this
-2) Change the color of the plot to yellow
-3) Plot the Joystick X position instead of the light sensor 
-4) (Advanced) Now plot the Joystick X and Y positions on the same plot in white and yellow
+  Activities:
+  1) If your range does not look ideal (plot is too low or too high), change the map() function (line 36) to fix this
+  2) Change the color of the plot to yellow
+  3) Plot the Joystick X position instead of the light sensor
+  4) (Advanced) Now plot the Joystick X and Y positions on the same plot with X in white and Y in yellow
 
 */

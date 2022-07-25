@@ -1,13 +1,13 @@
 /*
   Example 2.1 Button Press
-  
-  This code uses externally wired buttons to demonstrate how we can detect button presses. 
+
+  This code uses externally wired buttons to demonstrate how we can detect button presses.
   We will use these buttons: https://www.adafruit.com/product/4431
   Start by plugging two buttons into the ports on the bottom of the PyGamer using 3 pin STEMMA wires.
-  
-  We will also learn a new concept in this example, which is using the Serial monitor 
+
+  We will also learn a new concept in this example, which is using the Serial monitor
   to provide feedback from the microcontroller to the user (you!) via your computer screen.
-  
+
   created Jun 2022
   by Kevin Chávez López
 */
@@ -35,12 +35,12 @@ void loop() {
 
 /*
 
-Activities:
-1. What do you see on the Serial Monitor if you hold down each button?  Why does this happen?
-2. Editing only two characters, change which button causes the code to print "Button1 Pressed", and vice versa
-3. Change the names of the buttons to "ButtonA" and "ButtonB" throughout the code 
-4. Change the code to report to the Serial monitor when the buttons are released instead of pressed
-5. Now report both press and release events to the Serial monitor
-6. Instead of writing to the Serial monitor, light up the red LED on pin 13 when button1 is pressed 
+  Activities:
+  1. What do you see on the Serial Monitor if you hold down each button?  Why does this happen?
+  2. Editing only two characters, change which button causes the code to print "Button1 Pressed", and vice versa
+  3. Change the names of the buttons to "ButtonA" and "ButtonB" throughout the code
+  4. Change the code to report to the Serial monitor when the buttons are released instead of pressed
+  5. Now report both press and release events to the Serial monitor
+  6. Instead of writing to the Serial monitor, light up the red LED on pin 13 when button1 is pressed
 
 */

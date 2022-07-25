@@ -46,8 +46,8 @@ void loop() {
 /*
 
 Activities:
-1) Change the number in the screen rotation function, what happens?
+1) Rotate the screen to make the text appear upside-down
 2) Set the textsize to 2, what happens?  What about 3?
-3) Can you control the backlight brightness with an analogWrite() call?
+3) Change the backlight brightness with an analogWrite() call
 
 */

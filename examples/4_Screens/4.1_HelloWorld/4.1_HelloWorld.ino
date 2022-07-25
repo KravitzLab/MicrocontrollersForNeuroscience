@@ -32,7 +32,8 @@ void loop() {
 Activities:
 1) Why didn't we put anything in the void loop() in this script?
 2) Change the text to say hi to your neighbor!
-3) Change the color of the text to Red (Hint: search for "textcolor" here: https://learn.adafruit.com/adafruit-gfx-graphics-library/graphics-primitives)
-4) Can you rotate the screen 90 degrees to the text isn't sideways? (Hint: search the above link for the answer)
+3) Make the screen background Blue and write ":( Your PC ran into a problem that it couldn't handle, and now it needs to restart"
+4) Change the color of the text to Red (Hint: search for "textcolor" here: https://learn.adafruit.com/adafruit-gfx-graphics-library/graphics-primitives)
+5) Can you rotate the screen 90 degrees so the text isn't sideways? (Hint: search the above link for the answer)
 
 */
