@@ -35,7 +35,8 @@ void loop() {
 /*
 
 Activities:
-1. What happens if you remove the first call to pixels.show() in line 27?  Why?
-2. Can you play a short beep each time the five neopixels light up?
+1. Change the color of the blinking NeoPixels to purple (red/blue)
+2. Can you alternate the colors between white and blue without turning off?
+3. What happens if you remove the second call to pixels.show() in line 30?  Why did this happen?
 
 */
