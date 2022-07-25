@@ -25,7 +25,7 @@ void loop() {
   pixels.setPixelColor(0, 20, 0, 0);                              // Turn left-most pixel on red (Experiment with changing this line!)
   pixels.show();                                                  // Call pixels.show to light up the pixels
   delay(1000);                                                    // wait for a second
-  pixels.fill(pixels.Color(0, 0, 0));                             // Turn them all off
+  pixels.setPixelColor(0, 0, 0, 0);                               // Turn pixel off
   pixels.show();                                                  // Call pixels.show to light up the pixels (this will "light" them up with (0,0,0) or turn them off
   delay(1000);                                                    // wait for a second
 }
