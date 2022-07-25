@@ -36,10 +36,11 @@ void loop() {
 /*
 
 Activities:
-1. Editing only two characters, change which button causes the code to print "Button1 Pressed", and vice versa
-2. Change the names of the buttons to "ButtonA" and "ButtonB" throughout the code 
-3. Change the code to report to the Serial monitor when the buttons are released instead of pressed
-4. Now report both press and release events to the Serial monitor
-5. Instead of writing to the Serial monitor, light up the red LED on pin 13 when button1 is pressed 
+1. What do you see on the Serial Monitor if you hold down each button?  Why does this happen?
+2. Editing only two characters, change which button causes the code to print "Button1 Pressed", and vice versa
+3. Change the names of the buttons to "ButtonA" and "ButtonB" throughout the code 
+4. Change the code to report to the Serial monitor when the buttons are released instead of pressed
+5. Now report both press and release events to the Serial monitor
+6. Instead of writing to the Serial monitor, light up the red LED on pin 13 when button1 is pressed 
 
 */
