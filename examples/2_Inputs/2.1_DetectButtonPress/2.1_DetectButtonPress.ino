@@ -14,7 +14,7 @@
 
 #define Button1 3                                     // let's call digital pin 2 "button1"
 #define Button2 2                                     // let's call digital pin 3 "button2"
-int samplingPeriod = 200;                             // Set the sampling period for buttong presses (in ms)
+int samplingPeriod = 500;                             // Set the sampling period for buttong presses (in ms)
 
 void setup() {
   Serial.begin(9600);                                 // Start the serial connection to allow communication with the computer using the Serial port
