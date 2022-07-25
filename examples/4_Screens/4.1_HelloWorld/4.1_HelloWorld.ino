@@ -21,7 +21,7 @@ void setup(void) {
   tft.initR(INITR_BLACKTAB);                                 // Initialize ST7735R screen
   tft.fillScreen(ST77XX_BLACK);                              // Fill screen in black (ie: clear screen)
   digitalWrite(47, HIGH);                                    // turn on backlight on pin 47
-  tft.print("Hello world!");                                 // print "Hello world!" - you can change this to print comical expressions!
+  tft.print("Hello world!");                                 // print "Hello world!" 
 }
 
 void loop() {
@@ -31,7 +31,7 @@ void loop() {
 
 Activities:
 1) Why didn't we put anything in the void loop() in this script?
-2) Change the text to say hi to your neighbor
+2) Change the text to say hi to your neighbor!
 3) Change the color of the text to Red
 4) Can you rotate the screen 90 degrees to the text isn't sideways? (Hint: Google the Adafruit GFX library!)
 
