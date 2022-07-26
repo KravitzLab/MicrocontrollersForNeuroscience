@@ -47,6 +47,6 @@ void loop() {
   2) Print the cycle of the for loop to the Serial monitor, ie: "Loop 1", "Loop 2", "Loop 3", etc
   3) Modify the for loop to randomly change the NeoPixel color each time it blinks (Hint: Google an Arduino function called "random")
   4) Run the loop 25x, set pixels.Color to (i, 0, 25 - i), and remove the pixels.clear() call so it stops blinking.  Pretty, huh?
-  5) (Advanced) "Wrap" the for loop in *another* for loop to make the pixels smoothly transition from blue-red 10x
+  5) Remove the if statement so the pixels keep changing from blue-red continuously without pushing the button. Can you make the color smoothly go from blue-red-blue repeatedly?
 
 */
