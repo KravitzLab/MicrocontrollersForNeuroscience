@@ -12,7 +12,7 @@ int pin = 8;                                                    // NeoPixel outp
 int pix = 5;                                                    // Number of NeoPixels on PyGamer is 5
 Adafruit_NeoPixel pixels(pix, pin, NEO_GRB + NEO_KHZ800);       // Set up neopixels
 
-int freq = 5;                                                   // This is our pulsing frequency, start at 5Hz
+int period = 200;                                               // This is our pulsing period, start at 200ms, or 5Hz
 
 void setup() {
   Serial.begin()
@@ -21,21 +21,20 @@ void setup() {
 }
 
 void loop() {
-  //Pulse pixel 3
+  //Pulse pixel 3 at the set period
   pixels.setPixelColor(2, 0, 20, 20);                           // Turn 3rd pixel on blue/green
   pixels.show();                                                // Display neopixel
-  delay (50);                                                   // Delay for 50ms
+  delay (period/2);                                             // Delay for 50ms
   pixels.clear();                                               // Turn off all pixels
   pixels.show();                                                // Display neopixel
-  delay (50);                                                   // Delay for 50ms
+  delay (period/2);                                             // Delay for 50ms
 
   ///////////////////////////////////////////////////////
   // Task 1: Use two "if statements" to update the blinking 
   // frequency using the joystick.
   ///////////////////////////////////////////////////////
-  Serial.println(freq);                                         //Send pulsing frequency to the Serial Monitor (good for debugging)
-
-
+  Serial.println(period);                                       //Send pulsing frequency to the Serial Monitor (good for debugging)
+  
   ///////////////////////////////////////////////////////
   // Task 2: When the delay is set < 0 the program will crash. 
   // How can you stop this from happening?
