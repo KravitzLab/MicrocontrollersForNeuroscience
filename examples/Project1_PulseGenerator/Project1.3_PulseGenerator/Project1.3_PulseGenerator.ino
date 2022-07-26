@@ -15,7 +15,7 @@ Adafruit_NeoPixel pixels(pix, pin, NEO_GRB + NEO_KHZ800);       // Set up neopix
 int period = 200;                                               // This is our pulsing period, start at 200ms, or 5Hz
 
 void setup() {
-  Serial.begin()
+  Serial.begin();                                               // Open the serial connection
   pixels.begin();                                               // Initializes the NeoPixel object
   pinMode (button, INPUT);                                      // Set button to be an input
 }
