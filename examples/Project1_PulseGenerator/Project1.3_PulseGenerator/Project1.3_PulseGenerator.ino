@@ -42,11 +42,11 @@ void loop() {
 
   ///////////////////////////////////////////////////////
   // Task 3: Use a "while loop" to only pulse when the button
-  // on pin 3 is pressed (hint: See the Project 1.2 example)
+  // on pin 3 is pressed (hint: See the Project 1.2 example).
   ///////////////////////////////////////////////////////
 
   ///////////////////////////////////////////////////////
   // Task 4: Use a "for loop" to send 20 pulses when the
-  // button on pin 3 is pressed
+  // button on pin 3 is pressed.
   ///////////////////////////////////////////////////////
 }
