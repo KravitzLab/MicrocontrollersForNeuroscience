@@ -1,36 +1,53 @@
 /*
    Day 1 Project - build a simple pulse generator for controlling optogenetic stimulation!
-   
+
    created Jun 2022
    by Lex Kravitz and Kevin Chavez
 */
 
+#include <Adafruit_NeoPixel.h>                                  // Include Neopixel library
+
+#define button 3                                                // Assign the name "button" to pin 3
+int pin = 8;                                                    // NeoPixel output pin on PyGamer is 8
+int pix = 5;                                                    // Number of NeoPixels on PyGamer is 5
+Adafruit_NeoPixel pixels(pix, pin, NEO_GRB + NEO_KHZ800);       // Set up neopixels
+
 int freq = 5;                                                   // This is our pulsing frequency, start at 5Hz
 
 void setup() {
-  pinMode(13, OUTPUT);                                          // Set pin 13 (the LED) to be an output
+  Serial.begin()
+  pixels.begin();                                               // Initializes the NeoPixel object
+  pinMode (button, INPUT);                                      // Set button to be an input
 }
 
 void loop() {
-  //Pulse pin D13 at the set frequency
-  digitalWrite (13, HIGH);                                      // Light up LED on D13
-  delay(1000 / freq / 2);                                       // Delay for light ON period
-  digitalWrite (13, LOW);                                       // Turn off LED on D13
-  delay(1000 / freq / 2);                                       // Delay for light OFF period
+  //Pulse pixel 3
+  pixels.setPixelColor(2, 0, 20, 20);                           // Turn 3rd pixel on blue/green
+  pixels.show();                                                // Display neopixel
+  delay (50);                                                   // Delay for 50ms
+  pixels.clear();                                               // Turn off all pixels
+  pixels.show();                                                // Display neopixel
+  delay (50);                                                   // Delay for 50ms
 
   ///////////////////////////////////////////////////////
-  //Task 1: Write your code below here to update the value of "freq" using the joystick.  If it's updating too fast, how can you slow it down? 
+  // Task 1: Use two "if statements" to update the blinking 
+  // frequency using the joystick.
   ///////////////////////////////////////////////////////
   Serial.println(freq);                                         //Send pulsing frequency to the Serial Monitor (good for debugging)
 
 
-
-  
   ///////////////////////////////////////////////////////
-  //Task 2: When the pulse goes below 0, the program will crash - how can you stop this from happening?
+  // Task 2: When the delay is set < 0 the program will crash. 
+  // How can you stop this from happening?
   ///////////////////////////////////////////////////////
 
+  ///////////////////////////////////////////////////////
+  // Task 3: Use a "while loop" to only pulse when the button 
+  // on pin 3 is pressed (hint: See the Project 1.2 example)
+  ///////////////////////////////////////////////////////
 
-
-
+  ///////////////////////////////////////////////////////
+  // Task 4: Use a "for loop" to send 20 pulses when the 
+  // button on pin 3 is pressed 
+  ///////////////////////////////////////////////////////
 }
