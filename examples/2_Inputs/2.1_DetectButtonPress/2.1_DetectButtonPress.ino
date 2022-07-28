@@ -14,7 +14,7 @@
 
 #define Button1 3                                     // let's call digital pin 2 "button1"
 #define Button2 2                                     // let's call digital pin 3 "button2"
-int samplingPeriod = 500;                             // Set the sampling period for buttong presses (in ms)
+int delayVal = 500;                             // Set the sampling period for buttong presses (in ms)
 
 void setup() {
   Serial.begin(9600);                                 // Start the serial connection to allow communication with the computer using the Serial port
@@ -25,11 +25,11 @@ void setup() {
 void loop() {
   if (digitalRead(Button1) == LOW) {                  // If button1 has been pressed...
     Serial.println("Button1 Pressed");                // Print "Button1 Pressed"
-    delay(samplingPeriod);                            // A short delay helps prevent multiple triggers
+    delay(delayVal);                            // A short delay helps prevent multiple triggers
   }
   if (digitalRead(Button2) == LOW) {                  // If button2 has been pressed...
     Serial.println("Button2 Pressed");                // Print "Button2 Pressed"
-    delay(samplingPeriod);                            // A short delay helps prevent multiple triggers
+    delay(delayVal);                            // A short delay helps prevent multiple triggers
   }
 }
 
@@ -37,10 +37,7 @@ void loop() {
 
   Activities:
   1. What do you see on the Serial Monitor if you hold down each button?  Why does this happen?
-  2. Editing only two characters, change which button causes the code to print "Button1 Pressed", and vice versa
-  3. Change the names of the buttons to "ButtonA" and "ButtonB" throughout the code
-  4. Change the code to report to the Serial monitor when the buttons are released instead of pressed
-  5. Now report both press and release events to the Serial monitor
-  6. Instead of writing to the Serial monitor, light up the red LED on pin 13 when button1 is pressed
+  2. Change the code to report to the Serial monitor when the buttons are released instead of pressed
+  3. Now report both press and release events to the Serial monitor
 
 */
