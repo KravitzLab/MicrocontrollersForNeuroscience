@@ -30,6 +30,5 @@ void loop() {
  
 Activities:
 1) Modify the code to use the joystick instead of the light sensor to change the volume of the tone
-2) Modify the code to change the *frequency* and not the volume of the tone based on the joystick position.  You've made a cool instrument!
  
  */
