@@ -1,5 +1,5 @@
 /*
-  Example 3.5 - Blink the Neopixels with a for loop
+  Example 3.5 - Neopixels with a for loop
 
   created Jul 2022
   by Cammi Rood, Kevin Chavez Lopez, and Lex Kravitz
