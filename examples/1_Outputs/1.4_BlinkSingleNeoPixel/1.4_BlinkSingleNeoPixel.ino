@@ -35,6 +35,6 @@ void loop() {
 Activities:
 1. Can you blink the third pixel blue at 5Hz?
 2. Can you alternate between blinking the first and fifth pixels red at 1Hz?
-3. Can you turn each pixel on and off to light up pixels from 1 to 5 in order?
+3. Can you turn on all of the LEDs at once?
 
 */
