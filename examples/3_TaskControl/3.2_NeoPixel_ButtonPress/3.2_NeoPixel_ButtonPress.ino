@@ -32,10 +32,10 @@ void loop() {
   }
 }
 
+
 /*
 
-  Activities:
-  1) Light up the pixels in Red when you push the button
-  2) Leave pixels lit up for 2 seconds after you let go of the button
+  Activity:
+  1) Something seems off. Can you fix it?
 
 */
