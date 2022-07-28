@@ -11,7 +11,7 @@
 
 #define JoyStickX A11                                 // Read the X position on Analog pin 11
 #define JoyStickY A10                                 // Read the Y position is on Analog pin 10
-int samplingPeriod = 100;                             // Set a sampling period
+int delayVal = 100;                             // Set a sampling period
 
 void setup() {
   Serial.begin(9600);                                 //Start Serial connection to computer
@@ -22,12 +22,12 @@ void setup() {
 void loop() {
   int JoyStickXpos = analogRead(JoyStickX);           //Read the JoyStick X position and store it in "JoyStickXpos"
   int JoyStickYpos = analogRead(JoyStickY);           //Read the JoyStick Y position and store it in "JoyStickYpos"
-  Serial.print("X:");                                 //Print Joystick X position to the serial monitor
+  Serial.print("X: ");                                 //Print Joystick X position to the serial monitor
   Serial.print(JoyStickXpos);
-  Serial.print(",");                                  //Print a "," to the serial monitor
-  Serial.print("Y:");                                 //Print Joystick Y position to the serial monitor
+  Serial.print(", ");                                  //Print a "," to the serial monitor
+  Serial.print("Y: ");                                 //Print Joystick Y position to the serial monitor
   Serial.println(JoyStickYpos);
-  delay(samplingPeriod);                              //Wait for next sample
+  delay(delayVal);                              //Wait for next sample
 }
 
 /*
@@ -35,7 +35,6 @@ void loop() {
 Activities:
 1. Open the Serial Monitor. When you are not touching the joystick, what are the X and Y-values?
 2. What are the min and maximum range of the X and Y position?
-3. Open the Serial Plotter to see plots of the X and Y positions. Cool, huh?  Could you use this type of sensor for an experiment?
-4. (Advanced) Can you visualize the sampling period by blinking the red LED at the same rate?  Now change the sampling period to 1s.
+3. Open the Serial Plotter to see plots of the X and Y positions. Cool, huh?  Could you use this type of input for an experiment?
 
 */
