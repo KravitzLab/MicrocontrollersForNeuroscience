@@ -34,9 +34,9 @@ void loop() {
 /*
 
 Activities:
-1. Change the numbers in the delay() functions (lines 29 and 31) to deliver 100ms pulses at 5Hz, or 5 times per second.
-2. Change the numbers in the delay() functions to deliver 50ms pulses at 10Hz, or 10 times per second.
-3. Change the numbers in the delay() functions to deliver 10ms pulses at 50Hz, or 50 times per second.
+1. Change the numbers in the delay() functions (lines 29 and 31) to deliver pulses at 5Hz, or 5 times per second.
+2. Change the numbers in the delay() functions to deliver pulses at 10Hz, or 10 times per second.
+3. Change the numbers in the delay() functions to deliver pulses at 50Hz, or 50 times per second.
 4. Can you identify the frequency where you no longer detect the light blinking?
 
 */
