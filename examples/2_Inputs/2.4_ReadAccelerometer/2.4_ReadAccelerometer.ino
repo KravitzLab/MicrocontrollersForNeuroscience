@@ -17,7 +17,7 @@
 #include <Adafruit_LIS3DH.h>
 
 Adafruit_LIS3DH lis = Adafruit_LIS3DH();                //Start accelerometer object
-int samplingPeriod = 200;                               //Set the sampling period
+int delayVal = 200;                               //Set the sampling period
 
 void setup(void) {
   Serial.begin(9600);                                   //Start Serial connection to computer
@@ -30,23 +30,22 @@ void loop() {
   int y = lis.y;                                        //Store y acceleration in a variable called "y"
   int z = lis.z;                                        //Store z acceleration in a variable called "z"
 
-  Serial.print("X:");                             //Print x value to the serial monitor/plotter
+  Serial.print("X: ");                             //Print x value to the serial monitor/plotter
   Serial.print(x);
-  Serial.print(",");
-  Serial.print("Y:");                             //Print y value to the serial monitor/plotter
+  Serial.print(", ");
+  Serial.print("Y: ");                             //Print y value to the serial monitor/plotter
   Serial.print(y);      
-  Serial.print(",");
-  Serial.print("Z:");                             //Print z value to the serial monitor/plotter
+  Serial.print(", ");
+  Serial.print("Z: ");                             //Print z value to the serial monitor/plotter
   Serial.println(z);
-  delay(samplingPeriod);
+  delay(delayVal);
 }
 
 /*
 
 Activities:
 1. Open the Serial Plotter to visualize the accelerometer values.  Can you move the PyGamer to independently change the X, Y, and Z values?
-2. Turn the sampling period down to 10ms and look at the data on the Serial Plotter. Is it easier or harder to appreciate changes in acceleration?
-3. What units are the accelerometer values in? (Hint: Read from the link at the top)
-4. What are some potential uses for an accelerometer in neuroscience experiments?
+2. Change the delay to 10ms and look at the data on the Serial Plotter. Is it easier or harder to appreciate changes in acceleration?
+3. What are some potential uses for an accelerometer in neuroscience experiments?
 
 */
