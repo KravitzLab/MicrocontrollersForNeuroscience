@@ -57,7 +57,3 @@ void loop() {
     pixels.clear();
   }
 }
-
-/*
-  
- */
