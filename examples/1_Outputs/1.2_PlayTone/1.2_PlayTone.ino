@@ -29,7 +29,7 @@ void setup() {
 // put your main code here, to run repeatedly:
 void loop() {
   digitalWrite(speaker, HIGH); //Pull speaker pin high
-  delay (1);                   //delay 1ms (1ms HIGH/LOW will createa  500Hz tone)
+  delay (1);                   //delay 1ms (1ms HIGH/LOW will create a 500Hz tone)
   digitalWrite(speaker, LOW);  //Pull speaker pin low
   delay (1);                   //Delay 1ms
 }
@@ -40,7 +40,7 @@ Activities:
 1. What happens if you #define speaker as A2 but make no other changes to the code?  Make your prediction before trying it!
 2. Can you change the name of "speaker" to "buzzer"? 
 3. Can you make a 1000Hz tone?
-4. Does anything change if you pull the speaker LOW in line 26 and then HIGH in line 28?  Make your prediction before trying this.
+4. Does anything change if you pull the speaker LOW in line 31 and then HIGH in line 33?  Make your prediction before trying this.
 5. (Advanced) Changing the delay changes the tone frequency, how might you change the volume of the tone?  
    (Hint: Arduino also has an analogWrite function - Google it!)
 
