@@ -9,8 +9,8 @@
   by Cammi Rood
 */
 
-#define JoyStickX A11                                 // Read the X position on Analog pin 11
-#define JoyStickY A10                                 // Read the Y position is on Analog pin 10
+int JoyStickX = A11;                                 // Read the X position on Analog pin 11
+int JoyStickY = A10;                                 // Read the Y position is on Analog pin 10
 int delayVal = 100;                             // Set a sampling period
 
 void setup() {
