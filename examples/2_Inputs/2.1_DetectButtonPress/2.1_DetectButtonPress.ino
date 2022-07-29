@@ -12,9 +12,9 @@
   by Kevin Chávez López
 */
 
-#define Button1 3                                     // let's call digital pin 2 "button1"
-#define Button2 2                                     // let's call digital pin 3 "button2"
-int delayVal = 500;                             // Set the sampling period for buttong presses (in ms)
+int Button1 = 3;                                     // let's call digital pin 2 "button1"
+int Button2 = 2;                                     // let's call digital pin 3 "button2"
+int delayVal = 500;                                  // Set the sampling period for buttong presses (in ms)
 
 void setup() {
   Serial.begin(9600);                                 // Start the serial connection to allow communication with the computer using the Serial port
@@ -25,11 +25,11 @@ void setup() {
 void loop() {
   if (digitalRead(Button1) == LOW) {                  // If button1 has been pressed...
     Serial.println("Button1 Pressed");                // Print "Button1 Pressed"
-    delay(delayVal);                            // A short delay helps prevent multiple triggers
+    delay(delayVal);                                  // A short delay helps prevent multiple triggers
   }
   if (digitalRead(Button2) == LOW) {                  // If button2 has been pressed...
     Serial.println("Button2 Pressed");                // Print "Button2 Pressed"
-    delay(delayVal);                            // A short delay helps prevent multiple triggers
+    delay(delayVal);                                  // A short delay helps prevent multiple triggers
   }
 }
 
