@@ -38,7 +38,8 @@ void loop() {
 
   Activities:
   1. Can you change the above example to light up the 2nd pixel?
-  2. Can you change the color of the pixel to blue? green? white?
-  3. Can you light up pixels 1, 3, and 5 in red?
+  2. Can you change the pixels to blink?
+  3. Can you turn on all of the LEDs at once? Can you find a more efficient way of going this?
+  (hint: View the NeoPixel class reference documentation)
 
 */
