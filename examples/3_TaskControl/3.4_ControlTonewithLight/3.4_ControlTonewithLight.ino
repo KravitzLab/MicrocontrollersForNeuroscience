@@ -28,7 +28,7 @@ void loop() {
 
 /*
  
-Activities:
+Activity:
 1) Modify the code to use the joystick instead of the light sensor to change the volume of the tone
  
  */
