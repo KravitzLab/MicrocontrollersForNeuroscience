@@ -1,12 +1,14 @@
 /*
   Example 1.2: Playing a tone
   
+  In this example we will learn about tones and also the analogWrite() function - the analog cousin of digitalWrite()
+  
   In Example 1.1 we "blinked" the LED, meaning we pulled the voltage on the LED pin high 
   and low in an alternating pattern. If we do this on a pin that is connected to a speaker
   this will create a tone, although we'll need to "blink" the speaker much faster to hear the tone.
 
   The PyGamer's speaker is attached to pin A0. In this example we will start by alternating the voltage
-  on pin A0 to create a 500Hz tone.
+  on pin A0 to create a 500Hz tone.  The voltage goes from 
   
   We will also introduce the concept of naming variables in this example. "A0" is the pin name, but 
   calling it A0 in the code might get confusing if we were also using A1, A2, and A3 for other hardware. 
@@ -28,9 +30,9 @@ void setup() {
 
 // put your main code here, to run repeatedly:
 void loop() {
-  digitalWrite(speaker, HIGH); //Pull speaker pin high
+  analogWrite(speaker, 50);    //Pull speaker pin high, but only to ~5% of its volume (it gets loud if you go to the max, which is 1023)
   delay (1);                   //delay 1ms (1ms HIGH/LOW will create a 500Hz tone)
-  digitalWrite(speaker, LOW);  //Pull speaker pin low
+  analogWrite(speaker, 0);     //Pull speaker pin to 0V
   delay (1);                   //Delay 1ms
 }
 
