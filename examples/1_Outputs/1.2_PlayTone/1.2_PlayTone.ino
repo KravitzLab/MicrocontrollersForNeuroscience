@@ -30,7 +30,7 @@ void setup() {
 
 // put your main code here, to run repeatedly:
 void loop() {
-  analogWrite(speaker, 50);    //Pull speaker pin high, but only to ~5% of its volume (it gets loud if you go to the max, which is 1023)
+  analogWrite(speaker, 200);   //Pull speaker pin high, but only to ~20% of its volume (it gets very loud if you go to the max, which is 1023)
   delay (1);                   //delay 1ms (1ms HIGH/LOW will create a 500Hz tone)
   analogWrite(speaker, 0);     //Pull speaker pin to 0V
   delay (1);                   //Delay 1ms
