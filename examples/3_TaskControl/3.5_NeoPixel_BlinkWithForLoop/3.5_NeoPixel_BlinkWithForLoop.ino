@@ -11,17 +11,16 @@
 // Reference the NeoPixel Library
 #include <Adafruit_NeoPixel.h>
 
-#define button = 3;                                              // Choose a button to control the lights
-#define pix = 8;                                                 // The PyGamer pin connected to the NeoPixels = 8
-#define numPix = 5;                                              // Number of NeoPixels on the strip
+#define button 3                                              // Choose a button to control the lights
+#define pix 8                                                 // The PyGamer pin connected to the NeoPixels = 8
+#define numPix 5                                              // Number of NeoPixels on the strip
 int delayVal = 125;                                              // Set the blinking speed delay
 
 Adafruit_NeoPixel pixels(numPix, pix, NEO_GRB + NEO_KHZ800);     //Start the "pixels" object
 
 void setup() {
   pixels.begin();                                                // Initiates the NeoPixel object
-  pixels.clear();                                                // Turn off all pixels
-  pixels.show();                                                 // pixels.show() sends the command to the Neopixels
+  pixels.setBrightness(50); //Brightness ranges from 0 (off) to 255 (brightest)
 }
 
 void loop() {
@@ -39,8 +38,8 @@ void loop() {
 /*
 
   Activities:
-  1) Change the code to blink the NeoPixels 10 times 
-  2) Print the cycle of the for loop to the Serial monitor, ie: "Loop 1", "Loop 2", "Loop 3", etc
+  1) Change the code to blink the NeoPixels from right to left. 
+  2) Change the code to make the NeoPixels "bounce" back and forth.
   3) Modify the for loop to randomly change the NeoPixel color each time it blinks (Hint: Google an Arduino function called "random")
   4) (Advanced) Make the colors smoothly fade from blue red and back. 
 
