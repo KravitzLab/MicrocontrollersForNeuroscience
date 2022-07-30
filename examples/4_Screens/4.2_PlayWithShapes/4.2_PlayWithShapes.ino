@@ -1,5 +1,5 @@
 /*
-  Example 4.3: Play with shapes
+  Example 4.2: Play with shapes
 
   We're going to learn to draw shapes here - try copy/pasting these commands into the void loop()
   tft.drawPixel(50, 50, ST77XX_WHITE);                       // Pixel

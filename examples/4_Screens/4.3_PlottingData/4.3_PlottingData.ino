@@ -1,5 +1,5 @@
 /*
-  Example 4.4: Light Sensor Screen Plot
+  Example 4.3: Plotting data on the screen
 
   This example code plots data from the PyGamer's built-in light sensor
   and creates a dynamic graph on the TFT screen.
