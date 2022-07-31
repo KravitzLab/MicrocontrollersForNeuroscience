@@ -9,8 +9,8 @@
   
 */
 
-int button = 3;                                                  // Choose a button to control the LED
-int LED = 13;                                                    // LED is on pin 13
+#define button 3                                                  // Choose a button to control the LED
+#define LED 13                                                    // LED is on pin 13
 
 void setup() {
   pinMode(button, INPUT);                                        // Set button to be an input
@@ -28,9 +28,8 @@ void loop() {
 /*
 
 Activities:
-1) Make the other button turn on the LED
-2) When you push the button, leave the LED on for 1s before turning it off
-3) (Review from Module 2) When you push the button, also print "Button pushed" to the Serial monitor
-4) Instead of the red LED on the back, light up the middle Neopixel in Blue/Green when the buttons is pushed
+1) When you push the button, leave the LED on for 1s before turning it off
+2) (Review from Module 2) When you push the button, also print "Button pushed" to the Serial monitor
+3) Instead of the red LED on the back, light up the middle Neopixel in Blue/Green when the buttons is pushed (don't forget about the brighness!). How about turning on all neopixels?
 
 */
