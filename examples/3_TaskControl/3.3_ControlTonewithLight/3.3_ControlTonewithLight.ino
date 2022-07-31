@@ -1,5 +1,5 @@
 /*
-  Example 3.4: Light Sensor and Tone
+  Example 3.4: Using the Light Sensor to change the volume of a Tone
 
   This code reads the analog sensor data and plays a 500Hz tone,
   varying the volume based on light level.
@@ -28,7 +28,8 @@ void loop() {
 
 /*
  
-Activity:
+Activities:
 1) Modify the code to use the joystick instead of the light sensor to change the volume of the tone
+2) Modify the code to change the frequency of the tone while holding the volume constant
  
  */

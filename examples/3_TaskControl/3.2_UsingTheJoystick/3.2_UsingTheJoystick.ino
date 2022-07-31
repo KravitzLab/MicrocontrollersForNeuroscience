@@ -1,5 +1,5 @@
 /*
-  Example 3.3: Controlling the NeoPixels with the Joystick
+  Example 3.2: Controlling the NeoPixels with the Joystick
 
   This code read the X position from the PyGamer's built-in joystick
   to control which NeoPixels are lit. 
@@ -44,8 +44,8 @@ void loop() {
 
   Activities:
   1) Make the left two Neopixels light up in red, and the right two light up in blue when activated
-  2) Modify the code to light up the Neopixels using the X and Y positions
+  2) Modify the above code to light up the Neopixels with the X and Y positions
   3) Modify the code to light the Neopixels based on how much light is detected by the light sensor (Hint: Do you recall what the range of the light sensor was?)
-  4) (Advanced) Modify this code to control the NeoPixels with the accelerometer instead of the joystick
+  3) (Advanced) Modify this code to control the NeoPixels with the accelerometer instead of the joystick
 
 */

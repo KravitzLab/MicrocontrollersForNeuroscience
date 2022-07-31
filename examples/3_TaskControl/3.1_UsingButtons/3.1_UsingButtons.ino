@@ -1,8 +1,8 @@
 /*
-  Example 3.1 - Button Press LED
+  Example 3.1 - Controlling things with a button press 
   
   This code introduces task control by using an externally wired button
-  to turn on the built-in LED.
+  to turn on the built-in LED and the Neopixels.
   
   created Jun 2022
   by Lex Kravitz
@@ -31,5 +31,6 @@ Activities:
 1) Make the other button turn on the LED
 2) When you push the button, leave the LED on for 1s before turning it off
 3) (Review from Module 2) When you push the button, also print "Button pushed" to the Serial monitor
+4) Instead of the red LED on the back, light up the middle Neopixel in Blue/Green when the buttons is pushed
 
 */
