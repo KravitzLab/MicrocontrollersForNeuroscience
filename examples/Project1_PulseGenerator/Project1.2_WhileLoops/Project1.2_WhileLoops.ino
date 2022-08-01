@@ -39,8 +39,8 @@ void loop() {
 
 /*
 
-  Activities:
-  1) Change which button controls the LED pulsing
-  2) Change the loop to pulse the pixel when the button is NOT pushed
+  Activity:
+  
+  1) Change the loop to pulse the pixel when the button is NOT pushed
 
 */
