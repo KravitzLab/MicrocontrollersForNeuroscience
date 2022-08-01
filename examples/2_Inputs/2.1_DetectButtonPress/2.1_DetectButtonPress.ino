@@ -12,26 +12,26 @@
   by Kevin Chávez López
 */
 
-int Button = 3;                                     // let's call digital pin 2 "button1"
-int delayVal = 500;                                  // Set the sampling period for buttong presses (in ms)
+int Button = 3;                                      // let's call digital pin 3 "Button"
 
 void setup() {
-  Serial.begin(9600);                                 // Start the serial connection to allow communication with the computer using the Serial port
-  pinMode(Button, INPUT);                            // Set button1 as an input
+  Serial.begin(9600);                                // Start the serial connection to allow communication with the computer using the Serial port
+  pinMode(Button, INPUT);                            // Set Button as an input
 }
 
 void loop() {
-  if (digitalRead(Button1) == LOW) {                  // If button1 has been pressed...
-    Serial.println("Button Pressed");                // Print "Button1 Pressed"
-    delay(delayVal);                                  // A short delay helps prevent multiple triggers
+  if (digitalRead(Button) == LOW) {                  // If Button has been pressed...
+    Serial.println("Button Pressed");                // Print "Button Pressed"
+    delay(200);                                      // A short delay helps prevent multiple triggers
   }
 }
 
 /*
 
   Activities:
-  1. What do you see on the Serial Monitor if you hold down each button?  Why does this happen?
-  2. Change the code to report to the Serial monitor when the buttons are released instead of pressed
+  1. What do you see on the Serial Monitor if you hold down the button?  Why does this happen?  
+  2. Change the code to report to the Serial monitor when the button is released instead of pressed
   3. Now report both press and release events to the Serial monitor
+  4. (Advanced) Can you make it print "Button Pressed" only one time per button press, even if you hold the button down?
 
 */
